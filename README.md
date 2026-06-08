@@ -72,7 +72,6 @@ The following table compares candidate judge models across their separability sc
 | **AxionML/Qwen3.5-4B-NVFP4** | **37.97%** | 0.3287 | 0.4307 | *Omitted* | *Omitted* | *Omitted* | 52.6% / 47.4% (Opt A)<br>— | 50.8% / +1.4% (Opt A)<br>— |
 | **Qwen/Qwen3.5-0.8B** | **17.61%** | 0.1048 | 0.2474 | **51.36%** | 0.4959 | 0.5313 | 6.4% / 93.6% (Opt A)<br>5.7% / 94.3% (Opt B) | 50.1% / +0.0% (Opt A)<br>50.8% / +0.1% (Opt B) |
 
-
 ---
 
 ## Detailed Model Results & Leaderboards
@@ -305,6 +304,7 @@ The following table compares candidate judge models across their separability sc
 | 99 | mistralai/Mistral-Small-24B-Instruct-2501 | 1117.5 ± 18.6 |
 | 100 | meta-llama/llama-3.2-3b-instruct | 1086.8 ± 8.3 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1059.6 ± 12.7 |
+
 </details>
 
 <details>
@@ -535,6 +535,7 @@ The following table compares candidate judge models across their separability sc
 | 99 | openai/gpt-3.5-turbo-0613 | 1132.6 ± 11.2 |
 | 100 | meta-llama/llama-3.2-3b-instruct | 1104.3 ± 12.5 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1061.7 ± 11.7 |
+
 </details>
 
 <details>
@@ -651,109 +652,121 @@ The following table compares candidate judge models across their separability sc
 | 98 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1169.9 |
 | 99 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1169.9 |
 | 100 | meta-llama/llama-3.2-3b-instruct | 1168.4 |
-| 101 | meta-llama/llama-3.2-1b-instruct | 1148.4 |text
-  #1  claude-opus-4-7                | Avg Elo: 1281.8 ± 11.9
-  #2  claude-opus-4-6                | Avg Elo: 1266.0 ± 10.7
-  #3  moonshotai/Kimi-K2.5           | Avg Elo: 1250.9 ± 11.4
-  #4  gpt-5.5                        | Avg Elo: 1248.5 ± 11.1
-  #5  gpt-5.4                        | Avg Elo: 1242.3 ± 10.3
-  #6  moonshotai/Kimi-K2.6           | Avg Elo: 1239.3 ± 9.9
-  #7  claude-sonnet-4-6              | Avg Elo: 1238.4 ± 10.0
-  #8  o3                             | Avg Elo: 1237.2 ± 6.5
-  #9  moonshotai/Kimi-K2-Instruct    | Avg Elo: 1236.9 ± 5.7
-  #10 moonshotai/Kimi-K2-Thinking    | Avg Elo: 1236.0 ± 9.4
-  #11 grok-4.20-beta                 | Avg Elo: 1234.9 ± 9.4
-  #12 zai-org/GLM-5.1                | Avg Elo: 1230.1 ± 7.7
-  #13 claude-opus-4-5-20251101       | Avg Elo: 1229.7 ± 5.0
-  #14 gemini-3.1-pro-preview         | Avg Elo: 1228.2 ± 7.1
-  #15 gemini-3-pro-preview           | Avg Elo: 1228.0 ± 4.4
-  #16 openrouter/horizon-alpha       | Avg Elo: 1226.9 ± 7.0
-  #17 deepseek-ai/DeepSeek-V4-Pro    | Avg Elo: 1226.6 ± 5.8
-  #18 deepseek-ai/DeepSeek-V3.2      | Avg Elo: 1225.2 ± 4.0
-  #19 gpt-5-2025-08-07               | Avg Elo: 1224.0 ± 4.6
-  #20 gemini-2.5-pro-preview-06-05   | Avg Elo: 1223.8 ± 4.3
-  #21 claude-sonnet-4.5              | Avg Elo: 1222.1 ± 4.1
-  #22 openrouter/horizon-beta        | Avg Elo: 1222.0 ± 3.6
-  #23 deepseek-ai/DeepSeek-V3.1      | Avg Elo: 1221.5 ± 7.8
-  #24 gpt-5.2                        | Avg Elo: 1220.7 ± 7.9
-  #25 deepseek-ai/DeepSeek-V4-Flash  | Avg Elo: 1220.6 ± 5.5
-  #26 claude-opus-4                  | Avg Elo: 1220.6 ± 2.9
-  #27 gpt-5.3-chat                   | Avg Elo: 1220.4 ± 5.3
-  #28 google/gemma-4-31B-it          | Avg Elo: 1220.1 ± 4.4
-  #29 gpt-5.4-mini                   | Avg Elo: 1219.5 ± 5.4
-  #30 zai-org/GLM-5                  | Avg Elo: 1219.4 ± 6.6
-  #31 deepseek-ai/DeepSeek-R1        | Avg Elo: 1219.2 ± 5.9
-  #32 openrouter/pony-alpha          | Avg Elo: 1219.1 ± 3.7
-  #33 hunter-alpha                   | Avg Elo: 1218.1 ± 7.1
-  #34 zai-org/GLM-4.7                | Avg Elo: 1217.7 ± 7.4
-  #35 Qwen/Qwen3.5-397B-A17B         | Avg Elo: 1217.7 ± 4.4
-  #36 grok-4.1-fast                  | Avg Elo: 1217.2 ± 4.4
-  #37 zai-org/GLM-4.6                | Avg Elo: 1216.8 ± 3.0
-  #38 deepseek-ai/DeepSeek-R1-0528   | Avg Elo: 1215.6 ± 7.5
-  #39 NousResearch/Hermes-4-405B     | Avg Elo: 1213.6 ± 5.5
-  #40 openrouter/sherlock-dash-alpha | Avg Elo: 1213.4 ± 7.1
-  #41 qwen/qwen3-235b-a22b:thinking  | Avg Elo: 1213.1 ± 3.3
-  #42 chatgpt-4o-latest-2025-03-27   | Avg Elo: 1212.4 ± 4.0
-  #43 google/gemma-4-26B-A4B-it      | Avg Elo: 1212.3 ± 3.1
-  #44 gpt-5-mini-2025-08-07          | Avg Elo: 1211.9 ± 3.9
-  #45 gemini-2.5-pro-exp-03-25       | Avg Elo: 1210.9 ± 4.7
-  #46 mistral-medium-3.1             | Avg Elo: 1209.5 ± 5.9
-  #47 deepseek-ai/DeepSeek-V3-0324   | Avg Elo: 1208.7 ± 4.8
-  #48 zai-org/GLM-4.5                | Avg Elo: 1207.8 ± 6.6
-  #49 claude-3-5-sonnet-20241022     | Avg Elo: 1206.9 ± 6.6
-  #50 optimus-alpha                  | Avg Elo: 1206.5 ± 5.6
-  #51 claude-3-7-sonnet-20250219     | Avg Elo: 1206.3 ± 2.7
-  #52 claude-sonnet-4                | Avg Elo: 1205.1 ± 6.6
-  #53 mistralai/Mistral-Large-3-675B-Instruct-2512 | Avg Elo: 1204.5 ± 4.2
-  #54 quasar-alpha                   | Avg Elo: 1203.9 ± 4.6
-  #55 mistral-small-creative         | Avg Elo: 1203.6 ± 5.9
-  #56 minimax/minimax-m2.5           | Avg Elo: 1202.6 ± 6.5
-  #57 google/gemma-3-27b-it          | Avg Elo: 1200.9 ± 6.1
-  #58 grok-3-beta                    | Avg Elo: 1200.9 ± 2.3
-  #59 zai-org/GLM-4.7-Flash          | Avg Elo: 1200.5 ± 3.8
-  #60 chatgpt-4o-latest-2025-01-29   | Avg Elo: 1200.5 ± 8.1
-  #61 gpt-4.5-preview                | Avg Elo: 1198.3 ± 5.7
-  #62 deepseek-ai/DeepSeek-V3.2-Speciale | Avg Elo: 1197.5 ± 4.1
-  #63 Nanbeige/Nanbeige4-3B-Thinking-2511 | Avg Elo: 1197.3 ± 5.2
-  #64 qwen/qwq-32b                   | Avg Elo: 1197.0 ± 5.1
-  #65 CohereForAI/c4ai-command-a-03-2025 | Avg Elo: 1195.7 ± 4.6
-  #66 gemini-2.5-flash-preview       | Avg Elo: 1195.2 ± 6.4
-  #67 google/gemma-3-12b-it          | Avg Elo: 1195.0 ± 4.9
-  #68 mistralai/Mistral-Small-3.2-24B-Instruct-2506 | Avg Elo: 1194.9 ± 6.5
-  #69 RekaAI/reka-flash-3            | Avg Elo: 1194.0 ± 5.8
-  #70 gpt-5-nano-2025-08-07          | Avg Elo: 1192.5 ± 2.8
-  #71 ifable/gemma-2-Ifable-9B       | Avg Elo: 1192.0 ± 6.8
-  #72 sam-paech/Darkest-muse-v1      | Avg Elo: 1191.2 ± 8.0
-  #73 allura-org/Gemma-3-Glitter-12B | Avg Elo: 1191.0 ± 5.5
-  #74 openai/gpt-oss-120b            | Avg Elo: 1192.4 ± 5.4
-  #75 gemini-2.0-flash-001           | Avg Elo: 1188.3 ± 5.1
-  #76 gpt-4.1-mini                   | Avg Elo: 1187.6 ± 6.0
-  #77 anthropic/claude-3.5-haiku-20241022 | Avg Elo: 1186.6 ± 6.8
-  #78 THUDM/GLM-4-32B-0414           | Avg Elo: 1184.5 ± 7.4
-  #79 google/gemma-3-4b-it           | Avg Elo: 1184.2 ± 5.8
-  #80 mistralai/mistral-large-2411   | Avg Elo: 1176.5 ± 9.6
-  #81 meta-llama/llama-3.1-405b-instruct | Avg Elo: 1172.5 ± 10.6
-  #82 gpt-4o-mini                    | Avg Elo: 1171.5 ± 9.7
-  #83 mistralai/Pixtral-Large-Instruct-2411 | Avg Elo: 1170.4 ± 10.9
-  #84 google/gemma-2-9b-it           | Avg Elo: 1169.3 ± 7.6
-  #85 gpt-4.1-nano                   | Avg Elo: 1169.0 ± 11.0
-  #86 meta-llama/llama-3.1-70b-instruct | Avg Elo: 1163.3 ± 9.0
-  #87 mistralai/Mistral-Nemo-Instruct-2407 | Avg Elo: 1162.7 ± 8.4
-  #88 meta-llama/Llama-4-Maverick-17B-128E-Instruct | Avg Elo: 1160.4 ± 8.6
-  #89 ToastyPigeon/Gemma-3-Starshine-12B | Avg Elo: 1160.3 ± 11.4
-  #90 anthropic/claude-3-haiku       | Avg Elo: 1154.9 ± 6.1
-  #91 openai/gpt-4-0314              | Avg Elo: 1153.8 ± 9.6
-  #92 liquid/lfm-7b                  | Avg Elo: 1152.8 ± 6.8
-  #93 openai/gpt-oss-20b             | Avg Elo: 1149.9 ± 9.9
-  #94 openrouter/cypher-alpha        | Avg Elo: 1148.7 ± 11.3
-  #95 meta-llama/llama-3.1-8b-instruct | Avg Elo: 1145.5 ± 13.8
-  #96 meta-llama/Llama-4-Scout-17B-16E-Instruct | Avg Elo: 1140.8 ± 13.3
-  #97 mistralai/mistral-small-3.1-24b-instruct-2503 | Avg Elo: 1135.9 ± 16.8
-  #98 openai/gpt-3.5-turbo-0613      | Avg Elo: 1134.8 ± 10.8
-  #99 mistralai/Mistral-Small-24B-Instruct-2501 | Avg Elo: 1131.1 ± 13.4
-  #100 meta-llama/llama-3.2-3b-instruct | Avg Elo: 1112.4 ± 15.2
-  #101 meta-llama/llama-3.2-1b-instruct | Avg Elo: 1052.6 ± 23.1
-```
+| 101 | meta-llama/llama-3.2-1b-instruct | 1148.4 |
+
+### Option B: Bootstrapped Tournament Stability
+* **Omega-Squared (ANOVA effect size)**: 0.9421
+* **Mean Absolute Cliff's Delta**: 0.8614
+* **Combined Separability Score**: 90.18%
+* **Positional Bias**: Position 1 (A): 61.3% | Position 2 (B): 38.7%
+* **Length Bias**: Win Rate: 53.4% | Avg EV Margin: +4.2%
+
+#### Option B: Leaderboard (Resampled Tournaments)
+
+| Rank | Model Name | Avg Elo |
+| :---: | :--- | :---: |
+| 1 | claude-opus-4-7 | 1281.8 ± 11.9 |
+| 2 | claude-opus-4-6 | 1266.0 ± 10.7 |
+| 3 | moonshotai/Kimi-K2.5 | 1250.9 ± 11.4 |
+| 4 | gpt-5.5 | 1248.5 ± 11.1 |
+| 5 | gpt-5.4 | 1242.3 ± 10.3 |
+| 6 | moonshotai/Kimi-K2.6 | 1239.3 ± 9.9 |
+| 7 | claude-sonnet-4-6 | 1238.4 ± 10.0 |
+| 8 | o3 | 1237.2 ± 6.5 |
+| 9 | moonshotai/Kimi-K2-Instruct | 1236.9 ± 5.7 |
+| 10 | moonshotai/Kimi-K2-Thinking | 1236.0 ± 9.4 |
+| 11 | grok-4.20-beta | 1234.9 ± 9.4 |
+| 12 | zai-org/GLM-5.1 | 1230.1 ± 7.7 |
+| 13 | claude-opus-4-5-20251101 | 1229.7 ± 5.0 |
+| 14 | gemini-3.1-pro-preview | 1228.2 ± 7.1 |
+| 15 | gemini-3-pro-preview | 1228.0 ± 4.4 |
+| 16 | openrouter/horizon-alpha | 1226.9 ± 7.0 |
+| 17 | deepseek-ai/DeepSeek-V4-Pro | 1226.6 ± 5.8 |
+| 18 | deepseek-ai/DeepSeek-V3.2 | 1225.2 ± 4.0 |
+| 19 | gpt-5-2025-08-07 | 1224.0 ± 4.6 |
+| 20 | gemini-2.5-pro-preview-06-05 | 1223.8 ± 4.3 |
+| 21 | claude-sonnet-4.5 | 1222.1 ± 4.1 |
+| 22 | openrouter/horizon-beta | 1222.0 ± 3.6 |
+| 23 | deepseek-ai/DeepSeek-V3.1 | 1221.5 ± 7.8 |
+| 24 | gpt-5.2 | 1220.7 ± 7.9 |
+| 25 | deepseek-ai/DeepSeek-V4-Flash | 1220.6 ± 5.5 |
+| 26 | claude-opus-4 | 1220.6 ± 2.9 |
+| 27 | gpt-5.3-chat | 1220.4 ± 5.3 |
+| 28 | google/gemma-4-31B-it | 1220.1 ± 4.4 |
+| 29 | gpt-5.4-mini | 1219.5 ± 5.4 |
+| 30 | zai-org/GLM-5 | 1219.4 ± 6.6 |
+| 31 | deepseek-ai/DeepSeek-R1 | 1219.2 ± 5.9 |
+| 32 | openrouter/pony-alpha | 1219.1 ± 3.7 |
+| 33 | hunter-alpha | 1218.1 ± 7.1 |
+| 34 | zai-org/GLM-4.7 | 1217.7 ± 7.4 |
+| 35 | Qwen/Qwen3.5-397B-A17B | 1217.7 ± 4.4 |
+| 36 | grok-4.1-fast | 1217.2 ± 4.4 |
+| 37 | zai-org/GLM-4.6 | 1216.8 ± 3.0 |
+| 38 | deepseek-ai/DeepSeek-R1-0528 | 1215.6 ± 7.5 |
+| 39 | NousResearch/Hermes-4-405B | 1213.6 ± 5.5 |
+| 40 | openrouter/sherlock-dash-alpha | 1213.4 ± 7.1 |
+| 41 | qwen/qwen3-235b-a22b:thinking | 1213.1 ± 3.3 |
+| 42 | chatgpt-4o-latest-2025-03-27 | 1212.4 ± 4.0 |
+| 43 | google/gemma-4-26B-A4B-it | 1212.3 ± 3.1 |
+| 44 | gpt-5-mini-2025-08-07 | 1211.9 ± 3.9 |
+| 45 | gemini-2.5-pro-exp-03-25 | 1210.9 ± 4.7 |
+| 46 | mistral-medium-3.1 | 1209.5 ± 5.9 |
+| 47 | deepseek-ai/DeepSeek-V3-0324 | 1208.7 ± 4.8 |
+| 48 | zai-org/GLM-4.5 | 1207.8 ± 6.6 |
+| 49 | claude-3-5-sonnet-20241022 | 1206.9 ± 6.6 |
+| 50 | optimus-alpha | 1206.5 ± 5.6 |
+| 51 | claude-3-7-sonnet-20250219 | 1206.3 ± 2.7 |
+| 52 | claude-sonnet-4 | 1205.1 ± 6.6 |
+| 53 | mistralai/Mistral-Large-3-675B-Instruct-2512 | 1204.5 ± 4.2 |
+| 54 | quasar-alpha | 1203.9 ± 4.6 |
+| 55 | mistral-small-creative | 1203.6 ± 5.9 |
+| 56 | minimax/minimax-m2.5 | 1202.6 ± 6.5 |
+| 57 | google/gemma-3-27b-it | 1200.9 ± 6.1 |
+| 58 | grok-3-beta | 1200.9 ± 2.3 |
+| 59 | zai-org/GLM-4.7-Flash | 1200.5 ± 3.8 |
+| 60 | chatgpt-4o-latest-2025-01-29 | 1200.5 ± 8.1 |
+| 61 | gpt-4.5-preview | 1198.3 ± 5.7 |
+| 62 | deepseek-ai/DeepSeek-V3.2-Speciale | 1197.5 ± 4.1 |
+| 63 | Nanbeige/Nanbeige4-3B-Thinking-2511 | 1197.3 ± 5.2 |
+| 64 | qwen/qwq-32b | 1197.0 ± 5.1 |
+| 65 | CohereForAI/c4ai-command-a-03-2025 | 1195.7 ± 4.6 |
+| 66 | gemini-2.5-flash-preview | 1195.2 ± 6.4 |
+| 67 | google/gemma-3-12b-it | 1195.0 ± 4.9 |
+| 68 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 1194.9 ± 6.5 |
+| 69 | RekaAI/reka-flash-3 | 1194.0 ± 5.8 |
+| 70 | gpt-5-nano-2025-08-07 | 1192.5 ± 2.8 |
+| 71 | ifable/gemma-2-Ifable-9B | 1192.0 ± 6.8 |
+| 72 | sam-paech/Darkest-muse-v1 | 1191.2 ± 8.0 |
+| 73 | allura-org/Gemma-3-Glitter-12B | 1191.0 ± 5.5 |
+| 74 | openai/gpt-oss-120b | 1192.4 ± 5.4 |
+| 75 | gemini-2.0-flash-001 | 1188.3 ± 5.1 |
+| 76 | gpt-4.1-mini | 1187.6 ± 6.0 |
+| 77 | anthropic/claude-3.5-haiku-20241022 | 1186.6 ± 6.8 |
+| 78 | THUDM/GLM-4-32B-0414 | 1184.5 ± 7.4 |
+| 79 | google/gemma-3-4b-it | 1184.2 ± 5.8 |
+| 80 | mistralai/mistral-large-2411 | 1176.5 ± 9.6 |
+| 81 | meta-llama/llama-3.1-405b-instruct | 1172.5 ± 10.6 |
+| 82 | gpt-4o-mini | 1171.5 ± 9.7 |
+| 83 | mistralai/Pixtral-Large-Instruct-2411 | 1170.4 ± 10.9 |
+| 84 | google/gemma-2-9b-it | 1169.3 ± 7.6 |
+| 85 | gpt-4.1-nano | 1169.0 ± 11.0 |
+| 86 | meta-llama/llama-3.1-70b-instruct | 1163.3 ± 9.0 |
+| 87 | mistralai/Mistral-Nemo-Instruct-2407 | 1162.7 ± 8.4 |
+| 88 | meta-llama/Llama-4-Maverick-17B-128E-Instruct | 1160.4 ± 8.6 |
+| 89 | ToastyPigeon/Gemma-3-Starshine-12B | 1160.3 ± 11.4 |
+| 90 | anthropic/claude-3-haiku | 1154.9 ± 6.1 |
+| 91 | openai/gpt-4-0314 | 1153.8 ± 9.6 |
+| 92 | liquid/lfm-7b | 1152.8 ± 6.8 |
+| 93 | openai/gpt-oss-20b | 1149.9 ± 9.9 |
+| 94 | openrouter/cypher-alpha | 1148.7 ± 11.3 |
+| 95 | meta-llama/llama-3.1-8b-instruct | 1145.5 ± 13.8 |
+| 96 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1140.8 ± 13.3 |
+| 97 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1135.9 ± 16.8 |
+| 98 | openai/gpt-3.5-turbo-0613 | 1134.8 ± 10.8 |
+| 99 | mistralai/Mistral-Small-24B-Instruct-2501 | 1131.1 ± 13.4 |
+| 100 | meta-llama/llama-3.2-3b-instruct | 1112.4 ± 15.2 |
+| 101 | meta-llama/llama-3.2-1b-instruct | 1052.6 ± 23.1 |
+
 </details>
 
 <details>
@@ -982,6 +995,7 @@ The following table compares candidate judge models across their separability sc
 | 97 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1135.8 ± 12.8 |
 | 98 | mistralai/Mistral-Small-24B-Instruct-2501 | 1130.4 ± 15.4 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1049.6 ± 15.0 |
+
 </details>
 
 <details>
@@ -1329,109 +1343,121 @@ The following table compares candidate judge models across their separability sc
 | 98 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1180.4 |
 | 99 | meta-llama/llama-3.2-3b-instruct | 1179.8 |
 | 100 | mistralai/Mistral-Small-24B-Instruct-2501 | 1179.6 |
-| 101 | meta-llama/llama-3.2-1b-instruct | 1177.5 |text
-  #1  o3                             | Avg Elo: 1234.8 ± 5.1
-  #2  grok-4.20-beta                 | Avg Elo: 1234.0 ± 6.3
-  #3  moonshotai/Kimi-K2-Instruct    | Avg Elo: 1233.2 ± 7.7
-  #4  moonshotai/Kimi-K2.5           | Avg Elo: 1228.8 ± 4.8
-  #5  claude-opus-4-7                | Avg Elo: 1227.6 ± 4.7
-  #6  moonshotai/Kimi-K2-Thinking    | Avg Elo: 1226.2 ± 8.9
-  #7  gpt-5.4                        | Avg Elo: 1225.0 ± 6.3
-  #8  moonshotai/Kimi-K2.6           | Avg Elo: 1224.0 ± 7.5
-  #9  gpt-5.5                        | Avg Elo: 1219.6 ± 4.3
-  #10 claude-opus-4-6                | Avg Elo: 1219.1 ± 4.7
-  #11 deepseek-ai/DeepSeek-V3.2      | Avg Elo: 1217.6 ± 5.4
-  #12 gemini-3-pro-preview           | Avg Elo: 1215.5 ± 3.1
-  #13 zai-org/GLM-5.1                | Avg Elo: 1215.4 ± 3.2
-  #14 gemini-3.1-pro-preview         | Avg Elo: 1215.0 ± 4.2
-  #15 grok-4.1-fast                  | Avg Elo: 1213.9 ± 5.2
-  #16 deepseek-ai/DeepSeek-R1        | Avg Elo: 1213.8 ± 3.0
-  #17 claude-opus-4-5-20251101       | Avg Elo: 1213.8 ± 5.7
-  #18 hunter-alpha                   | Avg Elo: 1213.5 ± 4.7
-  #19 deepseek-ai/DeepSeek-V4-Pro    | Avg Elo: 1213.2 ± 3.2
-  #20 deepseek-ai/DeepSeek-V4-Flash  | Avg Elo: 1213.1 ± 4.8
-  #21 openrouter/sherlock-dash-alpha | Avg Elo: 1212.8 ± 4.3
-  #22 gpt-5.2                        | Avg Elo: 1212.6 ± 3.6
-  #23 claude-opus-4                  | Avg Elo: 1212.5 ± 3.8
-  #24 deepseek-ai/DeepSeek-V3.1      | Avg Elo: 1212.2 ± 3.9
-  #25 claude-sonnet-4-6              | Avg Elo: 1211.6 ± 2.8
-  #26 gpt-5-2025-08-07               | Avg Elo: 1211.6 ± 4.8
-  #27 Qwen/Qwen3.5-397B-A17B         | Avg Elo: 1211.5 ± 4.3
-  #28 gpt-5.4-mini                   | Avg Elo: 1211.0 ± 2.2
-  #29 google/gemma-4-31B-it          | Avg Elo: 1210.8 ± 2.9
-  #30 openrouter/horizon-beta        | Avg Elo: 1210.7 ± 4.4
-  #31 chatgpt-4o-latest-2025-03-27   | Avg Elo: 1210.5 ± 3.7
-  #32 openrouter/horizon-alpha       | Avg Elo: 1210.1 ± 3.0
-  #33 gpt-5.3-chat                   | Avg Elo: 1210.1 ± 4.3
-  #34 openrouter/pony-alpha          | Avg Elo: 1210.0 ± 4.3
-  #35 qwen/qwen3-235b-a22b:thinking  | Avg Elo: 1209.7 ± 3.3
-  #36 gemini-2.5-pro-preview-06-05   | Avg Elo: 1209.5 ± 3.3
-  #37 mistral-medium-3.1             | Avg Elo: 1209.3 ± 3.9
-  #38 deepseek-ai/DeepSeek-R1-0528   | Avg Elo: 1209.2 ± 4.6
-  #39 zai-org/GLM-4.7                | Avg Elo: 1209.1 ± 4.5
-  #40 zai-org/GLM-4.6                | Avg Elo: 1209.1 ± 4.1
-  #41 claude-sonnet-4.5              | Avg Elo: 1209.0 ± 3.5
-  #42 zai-org/GLM-4.5                | Avg Elo: 1208.8 ± 2.8
-  #43 zai-org/GLM-5                  | Avg Elo: 1208.4 ± 3.9
-  #44 google/gemma-4-26B-A4B-it      | Avg Elo: 1208.1 ± 3.5
-  #45 NousResearch/Hermes-4-405B     | Avg Elo: 1207.5 ± 2.9
-  #46 quasar-alpha                   | Avg Elo: 1206.9 ± 5.2
-  #47 gpt-5-mini-2025-08-07          | Avg Elo: 1206.5 ± 4.5
-  #48 Nanbeige/Nanbeige4-3B-Thinking-2511 | Avg Elo: 1206.5 ± 1.9
-  #49 RekaAI/reka-flash-3            | Avg Elo: 1205.6 ± 4.0
-  #50 mistralai/Mistral-Large-3-675B-Instruct-2512 | Avg Elo: 1205.4 ± 3.0
-  #51 claude-3-5-sonnet-20241022     | Avg Elo: 1205.2 ± 4.7
-  #52 deepseek-ai/DeepSeek-V3-0324   | Avg Elo: 1205.0 ± 2.2
-  #53 qwen/qwq-32b                   | Avg Elo: 1203.4 ± 4.7
-  #54 claude-3-7-sonnet-20250219     | Avg Elo: 1203.4 ± 3.6
-  #55 optimus-alpha                  | Avg Elo: 1203.2 ± 4.2
-  #56 claude-sonnet-4                | Avg Elo: 1203.2 ± 4.2
-  #57 mistral-small-creative         | Avg Elo: 1203.1 ± 3.5
-  #58 gemini-2.5-pro-exp-03-25       | Avg Elo: 1202.4 ± 3.0
-  #59 minimax/minimax-m2.5           | Avg Elo: 1201.0 ± 3.5
-  #60 deepseek-ai/DeepSeek-V3.2-Speciale | Avg Elo: 1200.9 ± 5.1
-  #61 zai-org/GLM-4.7-Flash          | Avg Elo: 1200.8 ± 3.9
-  #62 grok-3-beta                    | Avg Elo: 1200.8 ± 3.5
-  #63 mistralai/Mistral-Small-3.2-24B-Instruct-2506 | Avg Elo: 1200.7 ± 2.5
-  #64 CohereForAI/c4ai-command-a-03-2025 | Avg Elo: 1199.3 ± 4.0
-  #65 chatgpt-4o-latest-2025-01-29   | Avg Elo: 1199.3 ± 2.0
-  #66 google/gemma-3-27b-it          | Avg Elo: 1199.0 ± 6.1
-  #67 gpt-4.5-preview                | Avg Elo: 1198.5 ± 3.7
-  #68 gemini-2.5-flash-preview       | Avg Elo: 1196.5 ± 4.6
-  #69 google/gemma-3-12b-it          | Avg Elo: 1196.3 ± 2.6
-  #70 gpt-4.1-mini                   | Avg Elo: 1196.3 ± 2.4
-  #71 gemini-2.0-flash-001           | Avg Elo: 1196.2 ± 4.3
-  #72 gpt-5-nano-2025-08-07          | Avg Elo: 1196.0 ± 1.9
-  #73 anthropic/claude-3.5-haiku-20241022 | Avg Elo: 1195.5 ± 3.3
-  #74 ifable/gemma-2-Ifable-9B       | Avg Elo: 1195.3 ± 4.6
-  #75 sam-paech/Darkest-muse-v1      | Avg Elo: 1194.4 ± 3.9
-  #76 allura-org/Gemma-3-Glitter-12B | Avg Elo: 1193.8 ± 3.9
-  #77 google/gemma-3-4b-it           | Avg Elo: 1192.9 ± 6.8
-  #78 openai/gpt-oss-120b            | Avg Elo: 1192.4 ± 5.4
-  #79 THUDM/GLM-4-32B-0414           | Avg Elo: 1189.4 ± 3.2
-  #80 google/gemma-2-9b-it           | Avg Elo: 1183.5 ± 5.9
-  #81 gpt-4o-mini                    | Avg Elo: 1182.6 ± 5.8
-  #82 gpt-4.1-nano                   | Avg Elo: 1182.1 ± 4.2
-  #83 meta-llama/llama-3.1-405b-instruct | Avg Elo: 1180.8 ± 6.9
-  #84 mistralai/mistral-large-2411   | Avg Elo: 1179.5 ± 5.8
-  #85 liquid/lfm-7b                  | Avg Elo: 1178.7 ± 5.2
-  #86 mistralai/Pixtral-Large-Instruct-2411 | Avg Elo: 1178.6 ± 7.0
-  #87 anthropic/claude-3-haiku       | Avg Elo: 1178.4 ± 5.4
-  #88 ToastyPigeon/Gemma-3-Starshine-12B | Avg Elo: 1177.9 ± 6.0
-  #89 mistralai/Mistral-Nemo-Instruct-2407 | Avg Elo: 1176.3 ± 6.0
-  #90 meta-llama/llama-3.1-70b-instruct | Avg Elo: 1173.1 ± 4.3
-  #91 openai/gpt-oss-20b             | Avg Elo: 1172.6 ± 4.2
-  #92 openai/gpt-4-0314              | Avg Elo: 1172.1 ± 4.6
-  #93 meta-llama/Llama-4-Maverick-17B-128E-Instruct | Avg Elo: 1171.0 ± 6.2
-  #94 meta-llama/llama-3.1-8b-instruct | Avg Elo: 1168.2 ± 6.2
-  #95 openrouter/cypher-alpha        | Avg Elo: 1166.1 ± 7.3
-  #96 mistralai/Mistral-Small-24B-Instruct-2501 | Avg Elo: 1170.7 ± 5.0
-  #97 meta-llama/Llama-4-Scout-17B-16E-Instruct | Avg Elo: 1159.1 ± 7.6
-  #98 mistralai/mistral-small-3.1-24b-instruct-2503 | Avg Elo: 1157.1 ± 2.3
-  #99 openai/gpt-3.5-turbo-0613      | Avg Elo: 1154.0 ± 6.6
-  #100 meta-llama/llama-3.2-3b-instruct | Avg Elo: 1143.9 ± 11.6
-  #101 meta-llama/llama-3.2-1b-instruct | Avg Elo: 1135.4 ± 8.8
-```
+| 101 | meta-llama/llama-3.2-1b-instruct | 1177.5 |
+
+### Option B: Bootstrapped Tournament Stability
+* **Omega-Squared (ANOVA effect size)**: 0.9308
+* **Mean Absolute Cliff's Delta**: 0.8235
+* **Combined Separability Score**: 87.72%
+* **Positional Bias**: Position 1 (A): 69.3% | Position 2 (B): 30.7%
+* **Length Bias**: Win Rate: 53.1% | Avg EV Margin: +2.3%
+
+#### Option B: Leaderboard (Resampled Tournaments)
+
+| Rank | Model Name | Avg Elo |
+| :---: | :--- | :---: |
+| 1 | o3 | 1234.8 ± 5.1 |
+| 2 | grok-4.20-beta | 1234.0 ± 6.3 |
+| 3 | moonshotai/Kimi-K2-Instruct | 1233.2 ± 7.7 |
+| 4 | moonshotai/Kimi-K2.5 | 1228.8 ± 4.8 |
+| 5 | claude-opus-4-7 | 1227.6 ± 4.7 |
+| 6 | moonshotai/Kimi-K2-Thinking | 1226.2 ± 8.9 |
+| 7 | gpt-5.4 | 1225.0 ± 6.3 |
+| 8 | moonshotai/Kimi-K2.6 | 1224.0 ± 7.5 |
+| 9 | gpt-5.5 | 1219.6 ± 4.3 |
+| 10 | claude-opus-4-6 | 1219.1 ± 4.7 |
+| 11 | deepseek-ai/DeepSeek-V3.2 | 1217.6 ± 5.4 |
+| 12 | gemini-3-pro-preview | 1215.5 ± 3.1 |
+| 13 | zai-org/GLM-5.1 | 1215.4 ± 3.2 |
+| 14 | gemini-3.1-pro-preview | 1215.0 ± 4.2 |
+| 15 | grok-4.1-fast | 1213.9 ± 5.2 |
+| 16 | deepseek-ai/DeepSeek-R1 | 1213.8 ± 3.0 |
+| 17 | claude-opus-4-5-20251101 | 1213.8 ± 5.7 |
+| 18 | hunter-alpha | 1213.5 ± 4.7 |
+| 19 | deepseek-ai/DeepSeek-V4-Pro | 1213.2 ± 3.2 |
+| 20 | deepseek-ai/DeepSeek-V4-Flash | 1213.1 ± 4.8 |
+| 21 | openrouter/sherlock-dash-alpha | 1212.8 ± 4.3 |
+| 22 | gpt-5.2 | 1212.6 ± 3.6 |
+| 23 | claude-opus-4 | 1212.5 ± 3.8 |
+| 24 | deepseek-ai/DeepSeek-V3.1 | 1212.2 ± 3.9 |
+| 25 | claude-sonnet-4-6 | 1211.6 ± 2.8 |
+| 26 | gpt-5-2025-08-07 | 1211.6 ± 4.8 |
+| 27 | Qwen/Qwen3.5-397B-A17B | 1211.5 ± 4.3 |
+| 28 | gpt-5.4-mini | 1211.0 ± 2.2 |
+| 29 | google/gemma-4-31B-it | 1210.8 ± 2.9 |
+| 30 | openrouter/horizon-beta | 1210.7 ± 4.4 |
+| 31 | chatgpt-4o-latest-2025-03-27 | 1210.5 ± 3.7 |
+| 32 | openrouter/horizon-alpha | 1210.1 ± 3.0 |
+| 33 | gpt-5.3-chat | 1210.1 ± 4.3 |
+| 34 | openrouter/pony-alpha | 1210.0 ± 4.3 |
+| 35 | qwen/qwen3-235b-a22b:thinking | 1209.7 ± 3.3 |
+| 36 | gemini-2.5-pro-preview-06-05 | 1209.5 ± 3.3 |
+| 37 | mistral-medium-3.1 | 1209.3 ± 3.9 |
+| 38 | deepseek-ai/DeepSeek-R1-0528 | 1209.2 ± 4.6 |
+| 39 | zai-org/GLM-4.7 | 1209.1 ± 4.5 |
+| 40 | zai-org/GLM-4.6 | 1209.1 ± 4.1 |
+| 41 | claude-sonnet-4.5 | 1209.0 ± 3.5 |
+| 42 | zai-org/GLM-4.5 | 1208.8 ± 2.8 |
+| 43 | zai-org/GLM-5 | 1208.4 ± 3.9 |
+| 44 | google/gemma-4-26B-A4B-it | 1208.1 ± 3.5 |
+| 45 | NousResearch/Hermes-4-405B | 1207.5 ± 2.9 |
+| 46 | quasar-alpha | 1206.9 ± 5.2 |
+| 47 | gpt-5-mini-2025-08-07 | 1206.5 ± 4.5 |
+| 48 | Nanbeige/Nanbeige4-3B-Thinking-2511 | 1206.5 ± 1.9 |
+| 49 | RekaAI/reka-flash-3 | 1205.6 ± 4.0 |
+| 50 | mistralai/Mistral-Large-3-675B-Instruct-2512 | 1205.4 ± 3.0 |
+| 51 | claude-3-5-sonnet-20241022 | 1205.2 ± 4.7 |
+| 52 | deepseek-ai/DeepSeek-V3-0324 | 1205.0 ± 2.2 |
+| 53 | qwen/qwq-32b | 1203.4 ± 4.7 |
+| 54 | claude-3-7-sonnet-20250219 | 1203.4 ± 3.6 |
+| 55 | optimus-alpha | 1203.2 ± 4.2 |
+| 56 | claude-sonnet-4 | 1203.2 ± 4.2 |
+| 57 | mistral-small-creative | 1203.1 ± 3.5 |
+| 58 | gemini-2.5-pro-exp-03-25 | 1202.4 ± 3.0 |
+| 59 | minimax/minimax-m2.5 | 1201.0 ± 3.5 |
+| 60 | deepseek-ai/DeepSeek-V3.2-Speciale | 1200.9 ± 5.1 |
+| 61 | zai-org/GLM-4.7-Flash | 1200.8 ± 3.9 |
+| 62 | grok-3-beta | 1200.8 ± 3.5 |
+| 63 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 1200.7 ± 2.5 |
+| 64 | CohereForAI/c4ai-command-a-03-2025 | 1199.3 ± 4.0 |
+| 65 | chatgpt-4o-latest-2025-01-29 | 1199.3 ± 2.0 |
+| 66 | google/gemma-3-27b-it | 1199.0 ± 6.1 |
+| 67 | gpt-4.5-preview | 1198.5 ± 3.7 |
+| 68 | gemini-2.5-flash-preview | 1196.5 ± 4.6 |
+| 69 | google/gemma-3-12b-it | 1196.3 ± 2.6 |
+| 70 | gpt-4.1-mini | 1196.3 ± 2.4 |
+| 71 | gemini-2.0-flash-001 | 1196.2 ± 4.3 |
+| 72 | gpt-5-nano-2025-08-07 | 1196.0 ± 1.9 |
+| 73 | anthropic/claude-3.5-haiku-20241022 | 1195.5 ± 3.3 |
+| 74 | ifable/gemma-2-Ifable-9B | 1195.3 ± 4.6 |
+| 75 | sam-paech/Darkest-muse-v1 | 1194.4 ± 3.9 |
+| 76 | allura-org/Gemma-3-Glitter-12B | 1193.8 ± 3.9 |
+| 77 | google/gemma-3-4b-it | 1192.9 ± 6.8 |
+| 78 | openai/gpt-oss-120b | 1192.4 ± 5.4 |
+| 79 | THUDM/GLM-4-32B-0414 | 1189.4 ± 3.2 |
+| 80 | google/gemma-2-9b-it | 1183.5 ± 5.9 |
+| 81 | gpt-4o-mini | 1182.6 ± 5.8 |
+| 82 | gpt-4.1-nano | 1182.1 ± 4.2 |
+| 83 | meta-llama/llama-3.1-405b-instruct | 1180.8 ± 6.9 |
+| 84 | mistralai/mistral-large-2411 | 1179.5 ± 5.8 |
+| 85 | liquid/lfm-7b | 1178.7 ± 5.2 |
+| 86 | mistralai/Pixtral-Large-Instruct-2411 | 1178.6 ± 7.0 |
+| 87 | anthropic/claude-3-haiku | 1178.4 ± 5.4 |
+| 88 | ToastyPigeon/Gemma-3-Starshine-12B | 1177.9 ± 6.0 |
+| 89 | mistralai/Mistral-Nemo-Instruct-2407 | 1176.3 ± 6.0 |
+| 90 | meta-llama/llama-3.1-70b-instruct | 1173.1 ± 4.3 |
+| 91 | openai/gpt-oss-20b | 1172.6 ± 4.2 |
+| 92 | openai/gpt-4-0314 | 1172.1 ± 4.6 |
+| 93 | meta-llama/Llama-4-Maverick-17B-128E-Instruct | 1171.0 ± 6.2 |
+| 94 | meta-llama/llama-3.1-8b-instruct | 1168.2 ± 6.2 |
+| 95 | openrouter/cypher-alpha | 1166.1 ± 7.3 |
+| 96 | mistralai/Mistral-Small-24B-Instruct-2501 | 1170.7 ± 5.0 |
+| 97 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1159.1 ± 7.6 |
+| 98 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1157.1 ± 2.3 |
+| 99 | openai/gpt-3.5-turbo-0613 | 1154.0 ± 6.6 |
+| 100 | meta-llama/llama-3.2-3b-instruct | 1143.9 ± 11.6 |
+| 101 | meta-llama/llama-3.2-1b-instruct | 1135.4 ± 8.8 |
+
 </details>
 
 <details>
@@ -1660,6 +1686,7 @@ The following table compares candidate judge models across their separability sc
 | 97 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1157.1 ± 2.3 |
 | 98 | mistralai/Mistral-Small-24B-Instruct-2501 | 1131.1 ± 13.4 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1135.4 ± 8.8 |
+
 </details>
 
 <details>
@@ -1779,122 +1806,117 @@ The following table compares candidate judge models across their separability sc
 | 101 | openai/gpt-3.5-turbo-0613 | 1187.3 |
 
 ### Option B: Bootstrapped Tournament Stability
-====== 📊 BOOTSTRAPPED TOURNAMENT SEPARABILITY REPORT 📊 ======
-Omega-Squared (ANOVA effect size): 0.9140
-Mean Absolute Cliff's Delta:      0.8469
-Combined Separability Score:      88.04 / 100.0
----------------------------------------------------------------
-🧲 Positional Bias Baseline:
-Average assignment to Position 1: 75.6%
-Average assignment to Position 2: 24.4%
----------------------------------------------------------------
-📏 Length Bias Analytics:
-Longer Response Win Rate: 54.1%
-Avg EV Margin (Longer): +2.1%
-===============================================================
+* **Omega-Squared (ANOVA effect size)**: 0.9140
+* **Mean Absolute Cliff's Delta**: 0.8469
+* **Combined Separability Score**: 88.04%
+* **Positional Bias**: Position 1 (A): 75.6% | Position 2 (B): 24.4%
+* **Length Bias**: Win Rate: 54.1% | Avg EV Margin: +2.1%
 
-Mean Elo Ratings across bootstrap runs:
-#1  grok-4.20-beta                 | Avg Elo: 1232.5 ± 3.5
-#2  claude-opus-4-7                | Avg Elo: 1229.0 ± 6.9
-#3  gpt-5.3-chat                   | Avg Elo: 1223.7 ± 4.5
-#4  claude-sonnet-4-6              | Avg Elo: 1220.5 ± 3.3
-#5  gpt-5.4                        | Avg Elo: 1220.5 ± 4.8
-#6  claude-opus-4-6                | Avg Elo: 1220.4 ± 2.9
-#7  gpt-5.4-mini                   | Avg Elo: 1220.1 ± 4.6
-#8  moonshotai/Kimi-K2.5           | Avg Elo: 1218.8 ± 3.4
-#9  gpt-5.5                        | Avg Elo: 1217.8 ± 6.5
-#10 openrouter/horizon-beta        | Avg Elo: 1216.9 ± 3.2
-#11 gpt-5.2                        | Avg Elo: 1215.9 ± 7.0
-#12 moonshotai/Kimi-K2.6           | Avg Elo: 1215.3 ± 6.5
-#13 moonshotai/Kimi-K2-Instruct    | Avg Elo: 1214.8 ± 5.6
-#14 openrouter/horizon-alpha       | Avg Elo: 1214.4 ± 4.3
-#15 gpt-5-2025-08-07               | Avg Elo: 1214.3 ± 5.2
-#16 deepseek-ai/DeepSeek-V3.2      | Avg Elo: 1212.9 ± 3.0
-#17 claude-opus-4-5-20251101       | Avg Elo: 1212.5 ± 2.0
-#18 zai-org/GLM-5.1                | Avg Elo: 1211.9 ± 4.9
-#19 moonshotai/Kimi-K2-Thinking    | Avg Elo: 1211.2 ± 1.9
-#20 claude-sonnet-4.5              | Avg Elo: 1210.2 ± 4.2
-#21 o3                             | Avg Elo: 1210.0 ± 2.0
-#22 gemini-2.5-pro-preview-06-05   | Avg Elo: 1209.1 ± 2.2
-#23 deepseek-ai/DeepSeek-V4-Flash  | Avg Elo: 1208.1 ± 2.1
-#24 gpt-5-mini-2025-08-07          | Avg Elo: 1207.7 ± 3.7
-#25 gemini-3.1-pro-preview         | Avg Elo: 1207.6 ± 4.4
-#26 deepseek-ai/DeepSeek-V4-Pro    | Avg Elo: 1207.6 ± 2.6
-#27 claude-opus-4                  | Avg Elo: 1207.5 ± 1.5
-#28 hunter-alpha                   | Avg Elo: 1207.4 ± 2.6
-#29 grok-4.1-fast                  | Avg Elo: 1207.4 ± 4.1
-#30 openrouter/pony-alpha          | Avg Elo: 1207.4 ± 1.8
-#31 deepseek-ai/DeepSeek-V3.1      | Avg Elo: 1206.9 ± 1.7
-#32 zai-org/GLM-4.6                | Avg Elo: 1206.6 ± 3.5
-#33 deepseek-ai/DeepSeek-R1        | Avg Elo: 1206.1 ± 1.3
-#34 zai-org/GLM-5                  | Avg Elo: 1206.0 ± 1.1
-#35 claude-sonnet-4                | Avg Elo: 1205.8 ± 2.4
-#36 deepseek-ai/DeepSeek-R1-0528   | Avg Elo: 1205.3 ± 3.1
-#37 gemini-3-pro-preview           | Avg Elo: 1205.3 ± 3.3
-#38 NousResearch/Hermes-4-405B     | Avg Elo: 1205.2 ± 1.7
-#39 mistralai/Mistral-Large-3-675B-Instruct-2512 | Avg Elo: 1204.9 ± 2.7
-#40 minimax/minimax-m2.5           | Avg Elo: 1204.6 ± 2.7
-#41 openrouter/sherlock-dash-alpha | Avg Elo: 1204.3 ± 2.4
-#42 gemini-2.5-pro-exp-03-25       | Avg Elo: 1204.1 ± 2.9
-#43 google/gemma-4-26B-A4B-it      | Avg Elo: 1203.7 ± 2.9
-#44 chatgpt-4o-latest-2025-03-27   | Avg Elo: 1203.1 ± 1.5
-#45 Qwen/Qwen3.5-397B-A17B         | Avg Elo: 1203.1 ± 2.6
-#46 google/gemma-4-31B-it          | Avg Elo: 1203.1 ± 2.9
-#47 zai-org/GLM-4.7                | Avg Elo: 1202.7 ± 2.3
-#48 mistral-medium-3.1             | Avg Elo: 1202.4 ± 2.2
-#49 zai-org/GLM-4.5                | Avg Elo: 1202.0 ± 2.5
-#50 qwen/qwen3-235b-a22b:thinking  | Avg Elo: 1202.0 ± 2.3
-#51 optimus-alpha                  | Avg Elo: 1201.9 ± 2.3
-#52 mistral-small-creative         | Avg Elo: 1201.9 ± 1.7
-#53 Nanbeige/Nanbeige4-3B-Thinking-2511 | Avg Elo: 1201.8 ± 1.7
-#54 claude-3-7-sonnet-20250219     | Avg Elo: 1201.2 ± 2.8
-#55 zai-org/GLM-4.7-Flash          | Avg Elo: 1200.9 ± 3.4
-#56 chatgpt-4o-latest-2025-01-29   | Avg Elo: 1199.9 ± 4.4
-#57 quasar-alpha                   | Avg Elo: 1199.8 ± 2.3
-#58 gpt-4.1-mini                   | Avg Elo: 1199.5 ± 3.6
-#59 sam-paech/Darkest-muse-v1      | Avg Elo: 1199.3 ± 1.7
-#60 claude-3-5-sonnet-20241022     | Avg Elo: 1199.2 ± 3.2
-#61 deepseek-ai/DeepSeek-V3-0324   | Avg Elo: 1199.1 ± 3.4
-#62 mistralai/Mistral-Small-3.2-24B-Instruct-2506 | Avg Elo: 1199.0 ± 3.8
-#63 gpt-5-nano-2025-08-07          | Avg Elo: 1197.6 ± 0.7
-#64 qwen/qwq-32b                   | Avg Elo: 1197.5 ± 5.3
-#65 RekaAI/reka-flash-3            | Avg Elo: 1197.5 ± 2.6
-#66 google/gemma-3-27b-it          | Avg Elo: 1197.2 ± 1.2
-#67 grok-3-beta                    | Avg Elo: 1197.2 ± 1.5
-#68 openai/gpt-oss-120b            | Avg Elo: 1196.9 ± 2.8
-#69 ifable/gemma-2-Ifable-9B       | Avg Elo: 1196.7 ± 4.2
-#70 gpt-4.5-preview                | Avg Elo: 1195.8 ± 2.7
-#71 deepseek-ai/DeepSeek-V3.2-Speciale | Avg Elo: 1195.5 ± 2.2
-#72 gemini-2.0-flash-001           | Avg Elo: 1194.9 ± 2.2
-#73 google/gemma-3-4b-it           | Avg Elo: 1194.0 ± 3.0
-#74 CohereForAI/c4ai-command-a-03-2025 | Avg Elo: 1193.8 ± 2.2
-#75 anthropic/claude-3.5-haiku-20241022 | Avg Elo: 1193.5 ± 2.2
-#76 THUDM/GLM-4-32B-0414           | Avg Elo: 1193.3 ± 2.3
-#77 gemini-2.5-flash-preview       | Avg Elo: 1192.9 ± 2.0
-#78 allura-org/Gemma-3-Glitter-12B | Avg Elo: 1192.8 ± 3.0
-#79 google/gemma-3-12b-it          | Avg Elo: 1192.4 ± 3.3
-#80 gpt-4.1-nano                   | Avg Elo: 1189.7 ± 2.7
-#81 gpt-4o-mini                    | Avg Elo: 1189.1 ± 3.8
-#82 openai/gpt-oss-20b             | Avg Elo: 1188.6 ± 3.2
-#83 ToastyPigeon/Gemma-3-Starshine-12B | Avg Elo: 1187.9 ± 3.4
-#84 google/gemma-2-9b-it           | Avg Elo: 1187.7 ± 4.4
-#85 anthropic/claude-3-haiku       | Avg Elo: 1184.8 ± 5.2
-#86 mistralai/Pixtral-Large-Instruct-2411 | Avg Elo: 1184.7 ± 5.9
-#87 meta-llama/llama-3.1-70b-instruct | Avg Elo: 1184.6 ± 2.3
-#88 mistralai/mistral-large-2411   | Avg Elo: 1184.3 ± 2.7
-#89 meta-llama/Llama-4-Maverick-17B-128E-Instruct | Avg Elo: 1183.0 ± 5.3
-#90 meta-llama/llama-3.1-405b-instruct | Avg Elo: 1181.5 ± 4.9
-#91 meta-llama/llama-3.1-8b-instruct | Avg Elo: 1179.3 ± 2.5
-#92 openai/gpt-4-0314              | Avg Elo: 1179.2 ± 6.8
-#93 mistralai/Mistral-Nemo-Instruct-2407 | Avg Elo: 1178.8 ± 5.2
-#94 liquid/lfm-7b                  | Avg Elo: 1175.9 ± 5.1
-#95 openrouter/cypher-alpha        | Avg Elo: 1175.8 ± 6.0
-#96 meta-llama/Llama-4-Scout-17B-16E-Instruct | Avg Elo: 1175.8 ± 4.6
-#97 mistralai/Mistral-Small-24B-Instruct-2501 | Avg Elo: 1172.7 ± 5.9
-#98 mistralai/mistral-small-3.1-24b-instruct-2503 | Avg Elo: 1171.7 ± 7.2
-#99 meta-llama/llama-3.2-3b-instruct | Avg Elo: 1168.8 ± 4.8
-#100 openai/gpt-3.5-turbo-0613      | Avg Elo: 1167.6 ± 3.9
-#101 meta-llama/llama-3.2-1b-instruct | Avg Elo: 1165.0 ± 3.6
+#### Option B: Leaderboard (Resampled Tournaments)
+
+| Rank | Model Name | Avg Elo |
+| :---: | :--- | :---: |
+| 1 | grok-4.20-beta | 1232.5 ± 3.5 |
+| 2 | claude-opus-4-7 | 1229.0 ± 6.9 |
+| 3 | gpt-5.3-chat | 1223.7 ± 4.5 |
+| 4 | claude-sonnet-4-6 | 1220.5 ± 3.3 |
+| 5 | gpt-5.4 | 1220.5 ± 4.8 |
+| 6 | claude-opus-4-6 | 1220.4 ± 2.9 |
+| 7 | gpt-5.4-mini | 1220.1 ± 4.6 |
+| 8 | moonshotai/Kimi-K2.5 | 1218.8 ± 3.4 |
+| 9 | gpt-5.5 | 1217.8 ± 6.5 |
+| 10 | openrouter/horizon-beta | 1216.9 ± 3.2 |
+| 11 | gpt-5.2 | 1215.9 ± 7.0 |
+| 12 | moonshotai/Kimi-K2.6 | 1215.3 ± 6.5 |
+| 13 | moonshotai/Kimi-K2-Instruct | 1214.8 ± 5.6 |
+| 14 | openrouter/horizon-alpha | 1214.4 ± 4.3 |
+| 15 | gpt-5-2025-08-07 | 1214.3 ± 5.2 |
+| 16 | deepseek-ai/DeepSeek-V3.2 | 1212.9 ± 3.0 |
+| 17 | claude-opus-4-5-20251101 | 1212.5 ± 2.0 |
+| 18 | zai-org/GLM-5.1 | 1211.9 ± 4.9 |
+| 19 | moonshotai/Kimi-K2-Thinking | 1211.2 ± 1.9 |
+| 20 | claude-sonnet-4.5 | 1210.2 ± 4.2 |
+| 21 | o3 | 1210.0 ± 2.0 |
+| 22 | gemini-2.5-pro-preview-06-05 | 1209.1 ± 2.2 |
+| 23 | deepseek-ai/DeepSeek-V4-Flash | 1208.1 ± 2.1 |
+| 24 | gpt-5-mini-2025-08-07 | 1207.7 ± 3.7 |
+| 25 | gemini-3.1-pro-preview | 1207.6 ± 4.4 |
+| 26 | deepseek-ai/DeepSeek-V4-Pro | 1207.6 ± 2.6 |
+| 27 | claude-opus-4 | 1207.5 ± 1.5 |
+| 28 | hunter-alpha | 1207.4 ± 2.6 |
+| 29 | grok-4.1-fast | 1207.4 ± 4.1 |
+| 30 | openrouter/pony-alpha | 1207.4 ± 1.8 |
+| 31 | deepseek-ai/DeepSeek-V3.1 | 1206.9 ± 1.7 |
+| 32 | zai-org/GLM-4.6 | 1206.6 ± 3.5 |
+| 33 | deepseek-ai/DeepSeek-R1 | 1206.1 ± 1.3 |
+| 34 | zai-org/GLM-5 | 1206.0 ± 1.1 |
+| 35 | claude-sonnet-4 | 1205.8 ± 2.4 |
+| 36 | deepseek-ai/DeepSeek-R1-0528 | 1205.3 ± 3.1 |
+| 37 | gemini-3-pro-preview | 1205.3 ± 3.3 |
+| 38 | NousResearch/Hermes-4-405B | 1205.2 ± 1.7 |
+| 39 | mistralai/Mistral-Large-3-675B-Instruct-2512 | 1204.9 ± 2.7 |
+| 40 | minimax/minimax-m2.5 | 1204.6 ± 2.7 |
+| 41 | openrouter/sherlock-dash-alpha | 1204.3 ± 2.4 |
+| 42 | gemini-2.5-pro-exp-03-25 | 1204.1 ± 2.9 |
+| 43 | google/gemma-4-26B-A4B-it | 1203.7 ± 2.9 |
+| 44 | chatgpt-4o-latest-2025-03-27 | 1203.1 ± 1.5 |
+| 45 | Qwen/Qwen3.5-397B-A17B | 1203.1 ± 2.6 |
+| 46 | google/gemma-4-31B-it | 1203.1 ± 2.9 |
+| 47 | zai-org/GLM-4.7 | 1202.7 ± 2.3 |
+| 48 | mistral-medium-3.1 | 1202.4 ± 2.2 |
+| 49 | zai-org/GLM-4.5 | 1202.0 ± 2.5 |
+| 50 | qwen/qwen3-235b-a22b:thinking | 1202.0 ± 2.3 |
+| 51 | optimus-alpha | 1201.9 ± 2.3 |
+| 52 | mistral-small-creative | 1201.9 ± 1.7 |
+| 53 | Nanbeige/Nanbeige4-3B-Thinking-2511 | 1201.8 ± 1.7 |
+| 54 | claude-3-7-sonnet-20250219 | 1201.2 ± 2.8 |
+| 55 | zai-org/GLM-4.7-Flash | 1200.9 ± 3.4 |
+| 56 | chatgpt-4o-latest-2025-01-29 | 1199.9 ± 4.4 |
+| 57 | quasar-alpha | 1199.8 ± 2.3 |
+| 58 | gpt-4.1-mini | 1199.5 ± 3.6 |
+| 59 | sam-paech/Darkest-muse-v1 | 1199.3 ± 1.7 |
+| 60 | claude-3-5-sonnet-20241022 | 1199.2 ± 3.2 |
+| 61 | deepseek-ai/DeepSeek-V3-0324 | 1199.1 ± 3.4 |
+| 62 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 1199.0 ± 3.8 |
+| 63 | gpt-5-nano-2025-08-07 | 1197.6 ± 0.7 |
+| 64 | qwen/qwq-32b | 1197.5 ± 5.3 |
+| 65 | RekaAI/reka-flash-3 | 1197.5 ± 2.6 |
+| 66 | google/gemma-3-27b-it | 1197.2 ± 1.2 |
+| 67 | grok-3-beta | 1197.2 ± 1.5 |
+| 68 | openai/gpt-oss-120b | 1196.9 ± 2.8 |
+| 69 | ifable/gemma-2-Ifable-9B | 1196.7 ± 4.2 |
+| 70 | gpt-4.5-preview | 1195.8 ± 2.7 |
+| 71 | deepseek-ai/DeepSeek-V3.2-Speciale | 1195.5 ± 2.2 |
+| 72 | gemini-2.0-flash-001 | 1194.9 ± 2.2 |
+| 73 | google/gemma-3-4b-it | 1194.0 ± 3.0 |
+| 74 | CohereForAI/c4ai-command-a-03-2025 | 1193.8 ± 2.2 |
+| 75 | anthropic/claude-3.5-haiku-20241022 | 1193.5 ± 2.2 |
+| 76 | THUDM/GLM-4-32B-0414 | 1193.3 ± 2.3 |
+| 77 | gemini-2.5-flash-preview | 1192.9 ± 2.0 |
+| 78 | allura-org/Gemma-3-Glitter-12B | 1192.8 ± 3.0 |
+| 79 | google/gemma-3-12b-it | 1192.4 ± 3.3 |
+| 80 | gpt-4.1-nano | 1189.7 ± 2.7 |
+| 81 | gpt-4o-mini | 1189.1 ± 3.8 |
+| 82 | openai/gpt-oss-20b | 1188.6 ± 3.2 |
+| 83 | ToastyPigeon/Gemma-3-Starshine-12B | 1187.9 ± 3.4 |
+| 84 | google/gemma-2-9b-it | 1187.7 ± 4.4 |
+| 85 | anthropic/claude-3-haiku | 1184.8 ± 5.2 |
+| 86 | mistralai/Pixtral-Large-Instruct-2411 | 1184.7 ± 5.9 |
+| 87 | meta-llama/llama-3.1-70b-instruct | 1184.6 ± 2.3 |
+| 88 | mistralai/mistral-large-2411 | 1184.3 ± 2.7 |
+| 89 | meta-llama/Llama-4-Maverick-17B-128E-Instruct | 1183.0 ± 5.3 |
+| 90 | meta-llama/llama-3.1-405b-instruct | 1181.5 ± 4.9 |
+| 91 | meta-llama/llama-3.1-8b-instruct | 1179.3 ± 2.5 |
+| 92 | openai/gpt-4-0314 | 1179.2 ± 6.8 |
+| 93 | mistralai/Mistral-Nemo-Instruct-2407 | 1178.8 ± 5.2 |
+| 94 | liquid/lfm-7b | 1175.9 ± 5.1 |
+| 95 | openrouter/cypher-alpha | 1175.8 ± 6.0 |
+| 96 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1175.8 ± 4.6 |
+| 97 | mistralai/Mistral-Small-24B-Instruct-2501 | 1172.7 ± 5.9 |
+| 98 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1171.7 ± 7.2 |
+| 99 | meta-llama/llama-3.2-3b-instruct | 1168.8 ± 4.8 |
+| 100 | openai/gpt-3.5-turbo-0613 | 1167.6 ± 3.9 |
+| 101 | meta-llama/llama-3.2-1b-instruct | 1165.0 ± 3.6 |
 
 </details>
 
@@ -2126,6 +2148,7 @@ Mean Elo Ratings across bootstrap runs:
 | 99 | openai/gpt-oss-20b | 1191.5 ± 2.8 |
 | 100 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1191.3 ± 7.0 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1188.0 ± 1.8 |
+
 </details>
 
 <details>
@@ -2356,6 +2379,7 @@ Mean Elo Ratings across bootstrap runs:
 | 99 | openai/gpt-3.5-turbo-0613 | 1161.1 ± 4.1 |
 | 100 | meta-llama/llama-3.2-3b-instruct | 1151.7 ± 14.7 |
 | 101 | meta-llama/llama-3.2-1b-instruct | 1151.7 ± 9.3 |
+
 </details>
 
 <details>
@@ -2472,109 +2496,121 @@ Mean Elo Ratings across bootstrap runs:
 | 98 | openai/gpt-3.5-turbo-0613 | 1193.2 |
 | 99 | meta-llama/llama-3.2-1b-instruct | 1192.1 |
 | 100 | mistralai/Mistral-Small-24B-Instruct-2501 | 1192.1 |
-| 101 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1191.7 |text
-  #1  moonshotai/Kimi-K2.5           | Avg Elo: 1218.9 ± 2.6
-  #2  moonshotai/Kimi-K2-Instruct    | Avg Elo: 1218.3 ± 3.0
-  #3  o3                             | Avg Elo: 1216.4 ± 4.1
-  #4  zai-org/GLM-4.5                | Avg Elo: 1214.8 ± 6.7
-  #5  Nanbeige/Nanbeige4-3B-Thinking-2511 | Avg Elo: 1214.2 ± 6.6
-  #6  gpt-5.3-chat                   | Avg Elo: 1214.2 ± 4.3
-  #7  gpt-5.4                        | Avg Elo: 1213.5 ± 3.7
-  #8  deepseek-ai/DeepSeek-V4-Pro    | Avg Elo: 1213.3 ± 3.9
-  #9  deepseek-ai/DeepSeek-R1-0528   | Avg Elo: 1212.7 ± 1.4
-  #10 gpt-5.4-mini                   | Avg Elo: 1212.1 ± 4.9
-  #11 deepseek-ai/DeepSeek-V3.2      | Avg Elo: 1211.0 ± 2.0
-  #12 deepseek-ai/DeepSeek-V4-Flash  | Avg Elo: 1210.2 ± 3.3
-  #13 gemini-2.5-pro-preview-06-05   | Avg Elo: 1210.2 ± 1.9
-  #14 zai-org/GLM-4.6                | Avg Elo: 1209.5 ± 1.7
-  #15 gemini-3.1-pro-preview         | Avg Elo: 1209.4 ± 4.5
-  #16 openrouter/horizon-alpha       | Avg Elo: 1209.1 ± 3.5
-  #17 openrouter/horizon-beta        | Avg Elo: 1208.7 ± 3.7
-  #18 NousResearch/Hermes-4-405B     | Avg Elo: 1208.4 ± 5.5
-  #19 moonshotai/Kimi-K2-Thinking    | Avg Elo: 1208.3 ± 2.9
-  #20 gpt-5.5                        | Avg Elo: 1208.2 ± 1.4
-  #21 deepseek-ai/DeepSeek-V3.1      | Avg Elo: 1207.6 ± 1.6
-  #22 gpt-5.2                        | Avg Elo: 1207.1 ± 4.5
-  #23 mistral-small-creative         | Avg Elo: 1206.9 ± 3.8
-  #24 gemini-2.5-pro-exp-03-25       | Avg Elo: 1206.7 ± 2.9
-  #25 gpt-5-2025-08-07               | Avg Elo: 1206.4 ± 0.7
-  #26 gpt-5-mini-2025-08-07          | Avg Elo: 1206.3 ± 2.0
-  #27 mistralai/Mistral-Large-3-675B-Instruct-2512 | Avg Elo: 1206.1 ± 1.4
-  #28 google/gemma-4-26B-A4B-it      | Avg Elo: 1206.0 ± 4.7
-  #29 Qwen/Qwen3.5-397B-A17B         | Avg Elo: 1205.7 ± 2.8
-  #30 gemini-3-pro-preview           | Avg Elo: 1205.7 ± 4.8
-  #31 qwen/qwen3-235b-a22b:thinking  | Avg Elo: 1205.3 ± 5.8
-  #32 zai-org/GLM-4.7                | Avg Elo: 1205.3 ± 4.6
-  #33 zai-org/GLM-5.1                | Avg Elo: 1205.1 ± 4.0
-  #34 sam-paech/Darkest-muse-v1      | Avg Elo: 1205.0 ± 3.7
-  #35 mistral-medium-3.1             | Avg Elo: 1204.8 ± 3.3
-  #36 google/gemma-4-31B-it          | Avg Elo: 1204.7 ± 5.4
-  #37 hunter-alpha                   | Avg Elo: 1204.5 ± 2.8
-  #38 optimus-alpha                  | Avg Elo: 1204.4 ± 1.6
-  #39 claude-opus-4-6                | Avg Elo: 1204.4 ± 1.6
-  #40 ifable/gemma-2-Ifable-9B       | Avg Elo: 1203.6 ± 1.8
-  #41 quasar-alpha                   | Avg Elo: 1203.6 ± 4.5
-  #42 minimax/minimax-m2.5           | Avg Elo: 1203.1 ± 3.5
-  #43 claude-opus-4-7                | Avg Elo: 1203.1 ± 3.4
-  #44 mistralai/Mistral-Small-3.2-24B-Instruct-2506 | Avg Elo: 1201.9 ± 7.3
-  #45 gpt-5-nano-2025-08-07          | Avg Elo: 1201.8 ± 2.8
-  #46 claude-opus-4                  | Avg Elo: 1201.7 ± 1.9
-  #47 grok-4.20-beta                 | Avg Elo: 1201.6 ± 3.1
-  #48 deepseek-ai/DeepSeek-R1        | Avg Elo: 1201.3 ± 3.5
-  #49 grok-3-beta                    | Avg Elo: 1201.2 ± 1.0
-  #50 moonshotai/Kimi-K2.6           | Avg Elo: 1201.1 ± 3.0
-  #51 chatgpt-4o-latest-2025-03-27   | Avg Elo: 1201.1 ± 2.2
-  #52 openai/gpt-oss-120b            | Avg Elo: 1200.5 ± 4.3
-  #53 deepseek-ai/DeepSeek-V3.2-Speciale | Avg Elo: 1200.3 ± 2.9
-  #54 chatgpt-4o-latest-2025-01-29   | Avg Elo: 1200.0 ± 4.4
-  #55 zai-org/GLM-4.7-Flash          | Avg Elo: 1200.0 ± 3.5
-  #56 gemini-2.5-flash-preview       | Avg Elo: 1199.5 ± 2.3
-  #57 claude-sonnet-4-6              | Avg Elo: 1199.5 ± 3.1
-  #58 qwen/qwq-32b                   | Avg Elo: 1199.2 ± 2.3
-  #59 RekaAI/reka-flash-3            | Avg Elo: 1199.0 ± 2.0
-  #60 claude-sonnet-4.5              | Avg Elo: 1198.9 ± 3.4
-  #61 claude-opus-4-5-20251101       | Avg Elo: 1198.3 ± 3.3
-  #62 google/gemma-3-27b-it          | Avg Elo: 1198.2 ± 3.6
-  #63 zai-org/GLM-5                  | Avg Elo: 1198.1 ± 2.5
-  #64 allura-org/Gemma-3-Glitter-12B | Avg Elo: 1198.0 ± 1.4
-  #65 claude-sonnet-4                | Avg Elo: 1198.0 ± 1.3
-  #66 google/gemma-3-12b-it          | Avg Elo: 1197.5 ± 1.7
-  #67 gemini-2.0-flash-001           | Avg Elo: 1197.1 ± 3.3
-  #68 google/gemma-3-4b-it           | Avg Elo: 1197.1 ± 1.9
-  #69 claude-3-7-sonnet-20250219     | Avg Elo: 1197.0 ± 3.3
-  #70 gpt-4.1-mini                   | Avg Elo: 1197.0 ± 1.7
-  #71 claude-3-5-sonnet-20241022     | Avg Elo: 1196.4 ± 3.1
-  #72 gpt-4.5-preview                | Avg Elo: 1196.1 ± 0.8
-  #73 openrouter/pony-alpha          | Avg Elo: 1196.0 ± 4.4
-  #74 openrouter/sherlock-dash-alpha | Avg Elo: 1196.0 ± 3.6
-  #75 grok-4.1-fast                  | Avg Elo: 1195.5 ± 2.0
-  #76 deepseek-ai/DeepSeek-V3-0324   | Avg Elo: 1195.5 ± 1.4
-  #77 CohereForAI/c4ai-command-a-03-2025 | Avg Elo: 1195.3 ± 1.2
-  #78 anthropic/claude-3-haiku       | Avg Elo: 1193.7 ± 1.9
-  #79 anthropic/claude-3.5-haiku-20241022 | Avg Elo: 1193.6 ± 2.8
-  #80 openai/gpt-oss-20b             | Avg Elo: 1193.2 ± 2.2
-  #81 THUDM/GLM-4-32B-0414           | Avg Elo: 1192.6 ± 3.7
-  #82 gpt-4o-mini                    | Avg Elo: 1192.1 ± 3.7
-  #83 gpt-4.1-nano                   | Avg Elo: 1190.9 ± 5.4
-  #84 google/gemma-2-9b-it           | Avg Elo: 1190.1 ± 3.3
-  #85 meta-llama/Llama-4-Maverick-17B-128E-Instruct | Avg Elo: 1189.0 ± 3.2
-  #86 mistralai/mistral-large-2411   | Avg Elo: 1188.9 ± 4.6
-  #87 mistralai/Mistral-Nemo-Instruct-2407 | Avg Elo: 1188.8 ± 0.9
-  #88 meta-llama/llama-3.1-70b-instruct | Avg Elo: 1188.7 ± 1.9
-  #89 ToastyPigeon/Gemma-3-Starshine-12B | Avg Elo: 1188.6 ± 2.6
-  #90 openai/gpt-4-0314              | Avg Elo: 1187.4 ± 0.9
-  #91 meta-llama/llama-3.1-405b-instruct | Avg Elo: 1187.0 ± 3.3
-  #92 mistralai/Pixtral-Large-Instruct-2411 | Avg Elo: 1185.3 ± 1.6
-  #93 meta-llama/llama-3.1-8b-instruct | Avg Elo: 1185.0 ± 2.2
-  #94 liquid/lfm-7b                  | Avg Elo: 1184.5 ± 2.2
-  #95 meta-llama/Llama-4-Scout-17B-16E-Instruct | Avg Elo: 1182.6 ± 1.7
-  #96 meta-llama/llama-3.2-3b-instruct | Avg Elo: 1182.2 ± 2.5
-  #97 openrouter/cypher-alpha        | Avg Elo: 1181.7 ± 3.1
-  #98 openai/gpt-3.5-turbo-0613      | Avg Elo: 1180.9 ± 5.3
-  #99 mistralai/mistral-small-3.1-24b-instruct-2503 | Avg Elo: 1178.9 ± 5.9
-  #100 meta-llama/llama-3.2-1b-instruct | Avg Elo: 1178.4 ± 3.8
-  #101 mistralai/Mistral-Small-24B-Instruct-2501 | Avg Elo: 1177.1 ± 9.4
-```
+| 101 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1191.7 |
+
+### Option B: Bootstrapped Tournament Stability
+* **Omega-Squared (ANOVA effect size)**: 0.8466
+* **Mean Absolute Cliff's Delta**: 0.7874
+* **Combined Separability Score**: 81.70%
+* **Positional Bias**: Position 1 (A): 72.5% | Position 2 (B): 27.5%
+* **Length Bias**: Win Rate: 52.7% | Avg EV Margin: +1.2%
+
+#### Option B: Leaderboard (Resampled Tournaments)
+
+| Rank | Model Name | Avg Elo |
+| :---: | :--- | :---: |
+| 1 | moonshotai/Kimi-K2.5 | 1218.9 ± 2.6 |
+| 2 | moonshotai/Kimi-K2-Instruct | 1218.3 ± 3.0 |
+| 3 | o3 | 1216.4 ± 4.1 |
+| 4 | zai-org/GLM-4.5 | 1214.8 ± 6.7 |
+| 5 | Nanbeige/Nanbeige4-3B-Thinking-2511 | 1214.2 ± 6.6 |
+| 6 | gpt-5.3-chat | 1214.2 ± 4.3 |
+| 7 | gpt-5.4 | 1213.5 ± 3.7 |
+| 8 | deepseek-ai/DeepSeek-V4-Pro | 1213.3 ± 3.9 |
+| 9 | deepseek-ai/DeepSeek-R1-0528 | 1212.7 ± 1.4 |
+| 10 | gpt-5.4-mini | 1212.1 ± 4.9 |
+| 11 | deepseek-ai/DeepSeek-V3.2 | 1211.0 ± 2.0 |
+| 12 | deepseek-ai/DeepSeek-V4-Flash | 1210.2 ± 3.3 |
+| 13 | gemini-2.5-pro-preview-06-05 | 1210.2 ± 1.9 |
+| 14 | zai-org/GLM-4.6 | 1209.5 ± 1.7 |
+| 15 | gemini-3.1-pro-preview | 1209.4 ± 4.5 |
+| 16 | openrouter/horizon-alpha | 1209.1 ± 3.5 |
+| 17 | openrouter/horizon-beta | 1208.7 ± 3.7 |
+| 18 | NousResearch/Hermes-4-405B | 1208.4 ± 5.5 |
+| 19 | moonshotai/Kimi-K2-Thinking | 1208.3 ± 2.9 |
+| 20 | gpt-5.5 | 1208.2 ± 1.4 |
+| 21 | deepseek-ai/DeepSeek-V3.1 | 1207.6 ± 1.6 |
+| 22 | gpt-5.2 | 1207.1 ± 4.5 |
+| 23 | mistral-small-creative | 1206.9 ± 3.8 |
+| 24 | gemini-2.5-pro-exp-03-25 | 1206.7 ± 2.9 |
+| 25 | gpt-5-2025-08-07 | 1206.4 ± 0.7 |
+| 26 | gpt-5-mini-2025-08-07 | 1206.3 ± 2.0 |
+| 27 | mistralai/Mistral-Large-3-675B-Instruct-2512 | 1206.1 ± 1.4 |
+| 28 | google/gemma-4-26B-A4B-it | 1206.0 ± 4.7 |
+| 29 | Qwen/Qwen3.5-397B-A17B | 1205.7 ± 2.8 |
+| 30 | gemini-3-pro-preview | 1205.7 ± 4.8 |
+| 31 | qwen/qwen3-235b-a22b:thinking | 1205.3 ± 5.8 |
+| 32 | zai-org/GLM-4.7 | 1205.3 ± 4.6 |
+| 33 | zai-org/GLM-5.1 | 1205.1 ± 4.0 |
+| 34 | sam-paech/Darkest-muse-v1 | 1205.0 ± 3.7 |
+| 35 | mistral-medium-3.1 | 1204.8 ± 3.3 |
+| 36 | google/gemma-4-31B-it | 1204.7 ± 5.4 |
+| 37 | hunter-alpha | 1204.5 ± 2.8 |
+| 38 | optimus-alpha | 1204.4 ± 1.6 |
+| 39 | claude-opus-4-6 | 1204.4 ± 1.6 |
+| 40 | ifable/gemma-2-Ifable-9B | 1203.6 ± 1.8 |
+| 41 | quasar-alpha | 1203.6 ± 4.5 |
+| 42 | minimax/minimax-m2.5 | 1203.1 ± 3.5 |
+| 43 | claude-opus-4-7 | 1203.1 ± 3.4 |
+| 44 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 1201.9 ± 7.3 |
+| 45 | gpt-5-nano-2025-08-07 | 1201.8 ± 2.8 |
+| 46 | claude-opus-4 | 1201.7 ± 1.9 |
+| 47 | grok-4.20-beta | 1201.6 ± 3.1 |
+| 48 | deepseek-ai/DeepSeek-R1 | 1201.3 ± 3.5 |
+| 49 | grok-3-beta | 1201.2 ± 1.0 |
+| 50 | moonshotai/Kimi-K2.6 | 1201.1 ± 3.0 |
+| 51 | chatgpt-4o-latest-2025-03-27 | 1201.1 ± 2.2 |
+| 52 | openai/gpt-oss-120b | 1200.5 ± 4.3 |
+| 53 | deepseek-ai/DeepSeek-V3.2-Speciale | 1200.3 ± 2.9 |
+| 54 | chatgpt-4o-latest-2025-01-29 | 1200.0 ± 4.4 |
+| 55 | zai-org/GLM-4.7-Flash | 1200.0 ± 3.5 |
+| 56 | gemini-2.5-flash-preview | 1199.5 ± 2.3 |
+| 57 | claude-sonnet-4-6 | 1199.5 ± 3.1 |
+| 58 | qwen/qwq-32b | 1199.2 ± 2.3 |
+| 59 | RekaAI/reka-flash-3 | 1199.0 ± 2.0 |
+| 60 | claude-sonnet-4.5 | 1198.9 ± 3.4 |
+| 61 | claude-opus-4-5-20251101 | 1198.3 ± 3.3 |
+| 62 | google/gemma-3-27b-it | 1198.2 ± 3.6 |
+| 63 | zai-org/GLM-5 | 1198.1 ± 2.5 |
+| 64 | allura-org/Gemma-3-Glitter-12B | 1198.0 ± 1.4 |
+| 65 | claude-sonnet-4 | 1198.0 ± 1.3 |
+| 66 | google/gemma-3-12b-it | 1197.5 ± 1.7 |
+| 67 | gemini-2.0-flash-001 | 1197.1 ± 3.3 |
+| 68 | google/gemma-3-4b-it | 1197.1 ± 1.9 |
+| 69 | claude-3-7-sonnet-20250219 | 1197.0 ± 3.3 |
+| 70 | gpt-4.1-mini | 1197.0 ± 1.7 |
+| 71 | claude-3-5-sonnet-20241022 | 1196.4 ± 3.1 |
+| 72 | gpt-4.5-preview | 1196.1 ± 0.8 |
+| 73 | openrouter/pony-alpha | 1196.0 ± 4.4 |
+| 74 | openrouter/sherlock-dash-alpha | 1196.0 ± 3.6 |
+| 75 | grok-4.1-fast | 1195.5 ± 2.0 |
+| 76 | deepseek-ai/DeepSeek-V3-0324 | 1195.5 ± 1.4 |
+| 77 | CohereForAI/c4ai-command-a-03-2025 | 1195.3 ± 1.2 |
+| 78 | anthropic/claude-3-haiku | 1193.7 ± 1.9 |
+| 79 | anthropic/claude-3.5-haiku-20241022 | 1193.6 ± 2.8 |
+| 80 | openai/gpt-oss-20b | 1193.2 ± 2.2 |
+| 81 | THUDM/GLM-4-32B-0414 | 1192.6 ± 3.7 |
+| 82 | gpt-4o-mini | 1192.1 ± 3.7 |
+| 83 | gpt-4.1-nano | 1190.9 ± 5.4 |
+| 84 | google/gemma-2-9b-it | 1190.1 ± 3.3 |
+| 85 | meta-llama/Llama-4-Maverick-17B-128E-Instruct | 1189.0 ± 3.2 |
+| 86 | mistralai/mistral-large-2411 | 1188.9 ± 4.6 |
+| 87 | mistralai/Mistral-Nemo-Instruct-2407 | 1188.8 ± 0.9 |
+| 88 | meta-llama/llama-3.1-70b-instruct | 1188.7 ± 1.9 |
+| 89 | ToastyPigeon/Gemma-3-Starshine-12B | 1188.6 ± 2.6 |
+| 90 | openai/gpt-4-0314 | 1187.4 ± 0.9 |
+| 91 | meta-llama/llama-3.1-405b-instruct | 1187.0 ± 3.3 |
+| 92 | mistralai/Pixtral-Large-Instruct-2411 | 1185.3 ± 1.6 |
+| 93 | meta-llama/llama-3.1-8b-instruct | 1185.0 ± 2.2 |
+| 94 | liquid/lfm-7b | 1184.5 ± 2.2 |
+| 95 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1182.6 ± 1.7 |
+| 96 | meta-llama/llama-3.2-3b-instruct | 1182.2 ± 2.5 |
+| 97 | openrouter/cypher-alpha | 1181.7 ± 3.1 |
+| 98 | openai/gpt-3.5-turbo-0613 | 1180.9 ± 5.3 |
+| 99 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1178.9 ± 5.9 |
+| 100 | meta-llama/llama-3.2-1b-instruct | 1178.4 ± 3.8 |
+| 101 | mistralai/Mistral-Small-24B-Instruct-2501 | 1177.1 ± 9.4 |
+
 </details>
 
 <details>
@@ -2812,112 +2848,122 @@ Mean Elo Ratings across bootstrap runs:
 | 98 | gpt-4.1-nano | 1199.2 |
 | 99 | openai/gpt-oss-20b | 1199.2 |
 | 100 | gpt-5-nano-2025-08-07 | 1199.0 |
-| 101 | gpt-5.3-chat | 1198.3 |text
-  #1  gpt-5-2025-08-07               | Avg Elo: 1203.1 ± 1.9
-  #2  openrouter/horizon-alpha       | Avg Elo: 1202.9 ± 1.2
-  #3  zai-org/GLM-4.6                | Avg Elo: 1202.5 ± 1.3
-  #4  claude-opus-4-6                | Avg Elo: 1202.5 ± 0.9
-  #5  claude-opus-4-7                | Avg Elo: 1202.3 ± 1.2
-  #6  zai-org/GLM-4.7                | Avg Elo: 1202.3 ± 1.7
-  #7  deepseek-ai/DeepSeek-V4-Pro    | Avg Elo: 1202.1 ± 1.1
-  #8  google/gemma-4-31B-it          | Avg Elo: 1202.1 ± 0.9
-  #9  deepseek-ai/DeepSeek-V4-Flash  | Avg Elo: 1202.0 ± 1.2
-  #10 zai-org/GLM-4.7-Flash          | Avg Elo: 1201.9 ± 0.8
-  #11 claude-sonnet-4.5              | Avg Elo: 1201.9 ± 1.7
-  #12 gemini-3-pro-preview           | Avg Elo: 1201.8 ± 1.2
-  #13 sam-paech/Darkest-muse-v1      | Avg Elo: 1201.8 ± 1.7
-  #14 NousResearch/Hermes-4-405B     | Avg Elo: 1201.8 ± 0.9
-  #15 openrouter/horizon-beta        | Avg Elo: 1201.5 ± 1.7
-  #16 moonshotai/Kimi-K2.5           | Avg Elo: 1201.5 ± 1.7
-  #17 google/gemma-4-26B-A4B-it      | Avg Elo: 1201.5 ± 1.7
-  #18 claude-sonnet-4                | Avg Elo: 1201.5 ± 1.3
-  #19 deepseek-ai/DeepSeek-V3.1      | Avg Elo: 1201.4 ± 0.9
-  #20 zai-org/GLM-5.1                | Avg Elo: 1201.3 ± 1.0
-  #21 gemini-3.1-pro-preview         | Avg Elo: 1201.3 ± 1.0
-  #22 grok-4.20-beta                 | Avg Elo: 1201.2 ± 1.6
-  #23 gemini-2.5-pro-preview-06-05   | Avg Elo: 1201.2 ± 1.3
-  #24 optimus-alpha                  | Avg Elo: 1201.0 ± 1.3
-  #25 deepseek-ai/DeepSeek-R1        | Avg Elo: 1201.0 ± 1.1
-  #26 claude-sonnet-4-6              | Avg Elo: 1201.0 ± 1.6
-  #27 gpt-5.4                        | Avg Elo: 1201.0 ± 1.9
-  #28 hunter-alpha                   | Avg Elo: 1200.8 ± 1.7
-  #29 zai-org/GLM-4.5                | Avg Elo: 1200.8 ± 1.0
-  #30 moonshotai/Kimi-K2-Instruct    | Avg Elo: 1200.8 ± 1.5
-  #31 gemini-2.0-flash-001           | Avg Elo: 1200.8 ± 1.1
-  #32 o3                             | Avg Elo: 1200.8 ± 1.4
-  #33 moonshotai/Kimi-K2-Thinking    | Avg Elo: 1200.7 ± 1.2
-  #34 deepseek-ai/DeepSeek-V3.2      | Avg Elo: 1200.7 ± 0.8
-  #35 openrouter/sherlock-dash-alpha | Avg Elo: 1200.7 ± 1.8
-  #36 claude-3-5-sonnet-20241022     | Avg Elo: 1200.7 ± 1.6
-  #37 grok-3-beta                    | Avg Elo: 1200.7 ± 0.8
-  #38 google/gemma-3-27b-it          | Avg Elo: 1200.5 ± 1.3
-  #39 THUDM/GLM-4-32B-0414           | Avg Elo: 1200.5 ± 1.5
-  #40 deepseek-ai/DeepSeek-V3.2-Speciale | Avg Elo: 1200.5 ± 1.2
-  #41 qwen/qwq-32b                   | Avg Elo: 1200.5 ± 1.7
-  #42 meta-llama/llama-3.1-405b-instruct | Avg Elo: 1200.3 ± 1.2
-  #43 allura-org/Gemma-3-Glitter-12B | Avg Elo: 1200.3 ± 1.5
-  #44 gemini-2.5-pro-exp-03-25       | Avg Elo: 1200.3 ± 2.1
-  #45 gpt-5.2                        | Avg Elo: 1200.3 ± 1.5
-  #46 gpt-5.5                        | Avg Elo: 1200.2 ± 1.2
-  #47 qwen/qwen3-235b-a22b:thinking  | Avg Elo: 1200.2 ± 1.5
-  #48 openai/gpt-4-0314              | Avg Elo: 1200.2 ± 0.9
-  #49 claude-opus-4-5-20251101       | Avg Elo: 1200.2 ± 1.5
-  #50 zai-org/GLM-5                  | Avg Elo: 1200.2 ± 1.3
-  #51 Qwen/Qwen3.5-397B-A17B         | Avg Elo: 1200.2 ± 0.8
-  #52 deepseek-ai/DeepSeek-R1-0528   | Avg Elo: 1200.2 ± 1.2
-  #53 grok-4.1-fast                  | Avg Elo: 1200.1 ± 1.5
-  #54 deepseek-ai/DeepSeek-V3-0324   | Avg Elo: 1200.1 ± 1.8
-  #55 mistral-small-creative         | Avg Elo: 1200.0 ± 1.1
-  #56 gpt-5.4-mini                   | Avg Elo: 1200.0 ± 1.3
-  #57 quasar-alpha                   | Avg Elo: 1199.9 ± 2.2
-  #58 gpt-5-mini-2025-08-07          | Avg Elo: 1199.9 ± 1.9
-  #59 RekaAI/reka-flash-3            | Avg Elo: 1199.8 ± 1.2
-  #60 claude-opus-4                  | Avg Elo: 1199.8 ± 1.3
-  #61 moonshotai/Kimi-K2.6           | Avg Elo: 1199.8 ± 1.3
-  #62 mistral-medium-3.1             | Avg Elo: 1199.8 ± 1.6
-  #63 minimax/minimax-m2.5           | Avg Elo: 1199.7 ± 1.2
-  #64 openai/gpt-oss-120b            | Avg Elo: 1199.7 ± 0.6
-  #65 Nanbeige/Nanbeige4-3B-Thinking-2511 | Avg Elo: 1199.7 ± 1.6
-  #66 claude-3-7-sonnet-20250219     | Avg Elo: 1199.7 ± 1.2
-  #67 google/gemma-3-4b-it           | Avg Elo: 1199.5 ± 1.1
-  #68 chatgpt-4o-latest-2025-01-29   | Avg Elo: 1199.4 ± 1.2
-  #69 openrouter/pony-alpha          | Avg Elo: 1199.4 ± 1.3
-  #70 CohereForAI/c4ai-command-a-03-2025 | Avg Elo: 1199.4 ± 1.4
-  #71 google/gemma-3-12b-it          | Avg Elo: 1199.3 ± 1.5
-  #72 gpt-4o-mini                    | Avg Elo: 1199.3 ± 1.1
-  #73 chatgpt-4o-latest-2025-03-27   | Avg Elo: 1199.3 ± 1.5
-  #74 meta-llama/llama-3.2-1b-instruct | Avg Elo: 1199.3 ± 1.4
-  #75 anthropic/claude-3-haiku       | Avg Elo: 1199.2 ± 1.5
-  #76 gemini-2.5-flash-preview       | Avg Elo: 1199.2 ± 1.2
-  #77 mistralai/Mistral-Large-3-675B-Instruct-2512 | Avg Elo: 1199.2 ± 1.1
-  #78 meta-llama/Llama-4-Maverick-17B-128E-Instruct | Avg Elo: 1199.1 ± 0.7
-  #79 ToastyPigeon/Gemma-3-Starshine-12B | Avg Elo: 1199.1 ± 0.9
-  #80 gpt-4.5-preview                | Avg Elo: 1199.1 ± 1.5
-  #81 meta-llama/llama-3.1-8b-instruct | Avg Elo: 1198.7 ± 0.8
-  #82 meta-llama/llama-3.1-70b-instruct | Avg Elo: 1198.6 ± 1.6
-  #83 gpt-4.1-mini                   | Avg Elo: 1198.4 ± 1.8
-  #84 openai/gpt-3.5-turbo-0613      | Avg Elo: 1198.4 ± 1.7
-  #85 meta-llama/llama-3.2-3b-instruct | Avg Elo: 1198.2 ± 1.2
-  #86 mistralai/Mistral-Small-24B-Instruct-2501 | Avg Elo: 1198.2 ± 1.6
-  #87 openrouter/cypher-alpha        | Avg Elo: 1198.1 ± 2.2
-  #88 ifable/gemma-2-Ifable-9B       | Avg Elo: 1198.1 ± 1.3
-  #89 gpt-4.1-nano                   | Avg Elo: 1198.0 ± 1.2
-  #90 google/gemma-2-9b-it           | Avg Elo: 1198.0 ± 1.1
-  #91 liquid/lfm-7b                  | Avg Elo: 1198.0 ± 1.8
-  #92 mistralai/mistral-large-2411   | Avg Elo: 1197.9 ± 1.2
-  #93 gpt-5-nano-2025-08-07          | Avg Elo: 1197.9 ± 1.3
-  #94 mistralai/Mistral-Nemo-Instruct-2407 | Avg Elo: 1197.8 ± 1.3
-  #95 meta-llama/Llama-4-Scout-17B-16E-Instruct | Avg Elo: 1197.7 ± 1.3
-  #96 openai/gpt-oss-20b             | Avg Elo: 1197.6 ± 1.9
-  #97 mistralai/mistral-small-3.1-24b-instruct-2503 | Avg Elo: 1197.3 ± 1.1
-  #98 mistralai/Mistral-Small-3.2-24B-Instruct-2506 | Avg Elo: 1197.3 ± 1.4
-  #99 mistralai/Pixtral-Large-Instruct-2411 | Avg Elo: 1196.8 ± 1.0
-  #100 anthropic/claude-3.5-haiku-20241022 | Avg Elo: 1196.6 ± 1.1
-  #101 gpt-5.3-chat                   | Avg Elo: 1194.9 ± 1.3
-```
+| 101 | gpt-5.3-chat | 1198.3 |
+
+### Option B: Bootstrapped Tournament Stability
+* **Omega-Squared (ANOVA effect size)**: 0.4959
+* **Mean Absolute Cliff's Delta**: 0.5313
+* **Combined Separability Score**: 51.36%
+* **Positional Bias**: Position 1 (A): 5.7% | Position 2 (B): 94.3%
+* **Length Bias**: Win Rate: 50.8% | Avg EV Margin: +0.1%
+
+#### Option B: Leaderboard (Resampled Tournaments)
+
+| Rank | Model Name | Avg Elo |
+| :---: | :--- | :---: |
+| 1 | gpt-5-2025-08-07 | 1203.1 ± 1.9 |
+| 2 | openrouter/horizon-alpha | 1202.9 ± 1.2 |
+| 3 | zai-org/GLM-4.6 | 1202.5 ± 1.3 |
+| 4 | claude-opus-4-6 | 1202.5 ± 0.9 |
+| 5 | claude-opus-4-7 | 1202.3 ± 1.2 |
+| 6 | zai-org/GLM-4.7 | 1202.3 ± 1.7 |
+| 7 | deepseek-ai/DeepSeek-V4-Pro | 1202.1 ± 1.1 |
+| 8 | google/gemma-4-31B-it | 1202.1 ± 0.9 |
+| 9 | deepseek-ai/DeepSeek-V4-Flash | 1202.0 ± 1.2 |
+| 10 | zai-org/GLM-4.7-Flash | 1201.9 ± 0.8 |
+| 11 | claude-sonnet-4.5 | 1201.9 ± 1.7 |
+| 12 | gemini-3-pro-preview | 1201.8 ± 1.2 |
+| 13 | sam-paech/Darkest-muse-v1 | 1201.8 ± 1.7 |
+| 14 | NousResearch/Hermes-4-405B | 1201.8 ± 0.9 |
+| 15 | openrouter/horizon-beta | 1201.5 ± 1.7 |
+| 16 | moonshotai/Kimi-K2.5 | 1201.5 ± 1.7 |
+| 17 | google/gemma-4-26B-A4B-it | 1201.5 ± 1.7 |
+| 18 | claude-sonnet-4 | 1201.5 ± 1.3 |
+| 19 | deepseek-ai/DeepSeek-V3.1 | 1201.4 ± 0.9 |
+| 20 | zai-org/GLM-5.1 | 1201.3 ± 1.0 |
+| 21 | gemini-3.1-pro-preview | 1201.3 ± 1.0 |
+| 22 | grok-4.20-beta | 1201.2 ± 1.6 |
+| 23 | gemini-2.5-pro-preview-06-05 | 1201.2 ± 1.3 |
+| 24 | optimus-alpha | 1201.0 ± 1.3 |
+| 25 | deepseek-ai/DeepSeek-R1 | 1201.0 ± 1.1 |
+| 26 | claude-sonnet-4-6 | 1201.0 ± 1.6 |
+| 27 | gpt-5.4 | 1201.0 ± 1.9 |
+| 28 | hunter-alpha | 1200.8 ± 1.7 |
+| 29 | zai-org/GLM-4.5 | 1200.8 ± 1.0 |
+| 30 | moonshotai/Kimi-K2-Instruct | 1200.8 ± 1.5 |
+| 31 | gemini-2.0-flash-001 | 1200.8 ± 1.1 |
+| 32 | o3 | 1200.8 ± 1.4 |
+| 33 | moonshotai/Kimi-K2-Thinking | 1200.7 ± 1.2 |
+| 34 | deepseek-ai/DeepSeek-V3.2 | 1200.7 ± 0.8 |
+| 35 | openrouter/sherlock-dash-alpha | 1200.7 ± 1.8 |
+| 36 | claude-3-5-sonnet-20241022 | 1200.7 ± 1.6 |
+| 37 | grok-3-beta | 1200.7 ± 0.8 |
+| 38 | google/gemma-3-27b-it | 1200.5 ± 1.3 |
+| 39 | THUDM/GLM-4-32B-0414 | 1200.5 ± 1.5 |
+| 40 | deepseek-ai/DeepSeek-V3.2-Speciale | 1200.5 ± 1.2 |
+| 41 | qwen/qwq-32b | 1200.5 ± 1.7 |
+| 42 | meta-llama/llama-3.1-405b-instruct | 1200.3 ± 1.2 |
+| 43 | allura-org/Gemma-3-Glitter-12B | 1200.3 ± 1.5 |
+| 44 | gemini-2.5-pro-exp-03-25 | 1200.3 ± 2.1 |
+| 45 | gpt-5.2 | 1200.3 ± 1.5 |
+| 46 | gpt-5.5 | 1200.2 ± 1.2 |
+| 47 | qwen/qwen3-235b-a22b:thinking | 1200.2 ± 1.5 |
+| 48 | openai/gpt-4-0314 | 1200.2 ± 0.9 |
+| 49 | claude-opus-4-5-20251101 | 1200.2 ± 1.5 |
+| 50 | zai-org/GLM-5 | 1200.2 ± 1.3 |
+| 51 | Qwen/Qwen3.5-397B-A17B | 1200.2 ± 0.8 |
+| 52 | deepseek-ai/DeepSeek-R1-0528 | 1200.2 ± 1.2 |
+| 53 | grok-4.1-fast | 1200.1 ± 1.5 |
+| 54 | deepseek-ai/DeepSeek-V3-0324 | 1200.1 ± 1.8 |
+| 55 | mistral-small-creative | 1200.0 ± 1.1 |
+| 56 | gpt-5.4-mini | 1200.0 ± 1.3 |
+| 57 | quasar-alpha | 1199.9 ± 2.2 |
+| 58 | gpt-5-mini-2025-08-07 | 1199.9 ± 1.9 |
+| 59 | RekaAI/reka-flash-3 | 1199.8 ± 1.2 |
+| 60 | claude-opus-4 | 1199.8 ± 1.3 |
+| 61 | moonshotai/Kimi-K2.6 | 1199.8 ± 1.3 |
+| 62 | mistral-medium-3.1 | 1199.8 ± 1.6 |
+| 63 | minimax/minimax-m2.5 | 1199.7 ± 1.2 |
+| 64 | openai/gpt-oss-120b | 1199.7 ± 0.6 |
+| 65 | Nanbeige/Nanbeige4-3B-Thinking-2511 | 1199.7 ± 1.6 |
+| 66 | claude-3-7-sonnet-20250219 | 1199.7 ± 1.2 |
+| 67 | google/gemma-3-4b-it | 1199.5 ± 1.1 |
+| 68 | chatgpt-4o-latest-2025-01-29 | 1199.4 ± 1.2 |
+| 69 | openrouter/pony-alpha | 1199.4 ± 1.3 |
+| 70 | CohereForAI/c4ai-command-a-03-2025 | 1199.4 ± 1.4 |
+| 71 | google/gemma-3-12b-it | 1199.3 ± 1.5 |
+| 72 | gpt-4o-mini | 1199.3 ± 1.1 |
+| 73 | chatgpt-4o-latest-2025-03-27 | 1199.3 ± 1.5 |
+| 74 | meta-llama/llama-3.2-1b-instruct | 1199.3 ± 1.4 |
+| 75 | anthropic/claude-3-haiku | 1199.2 ± 1.5 |
+| 76 | gemini-2.5-flash-preview | 1199.2 ± 1.2 |
+| 77 | mistralai/Mistral-Large-3-675B-Instruct-2512 | 1199.2 ± 1.1 |
+| 78 | meta-llama/Llama-4-Maverick-17B-128E-Instruct | 1199.1 ± 0.7 |
+| 79 | ToastyPigeon/Gemma-3-Starshine-12B | 1199.1 ± 0.9 |
+| 80 | gpt-4.5-preview | 1199.1 ± 1.5 |
+| 81 | meta-llama/llama-3.1-8b-instruct | 1198.7 ± 0.8 |
+| 82 | meta-llama/llama-3.1-70b-instruct | 1198.6 ± 1.6 |
+| 83 | gpt-4.1-mini | 1198.4 ± 1.8 |
+| 84 | openai/gpt-3.5-turbo-0613 | 1198.4 ± 1.7 |
+| 85 | meta-llama/llama-3.2-3b-instruct | 1198.2 ± 1.2 |
+| 86 | mistralai/Mistral-Small-24B-Instruct-2501 | 1198.2 ± 1.6 |
+| 87 | openrouter/cypher-alpha | 1198.1 ± 2.2 |
+| 88 | ifable/gemma-2-Ifable-9B | 1198.1 ± 1.3 |
+| 89 | gpt-4.1-nano | 1198.0 ± 1.2 |
+| 90 | google/gemma-2-9b-it | 1198.0 ± 1.1 |
+| 91 | liquid/lfm-7b | 1198.0 ± 1.8 |
+| 92 | mistralai/mistral-large-2411 | 1197.9 ± 1.2 |
+| 93 | gpt-5-nano-2025-08-07 | 1197.9 ± 1.3 |
+| 94 | mistralai/Mistral-Nemo-Instruct-2407 | 1197.8 ± 1.3 |
+| 95 | meta-llama/Llama-4-Scout-17B-16E-Instruct | 1197.7 ± 1.3 |
+| 96 | openai/gpt-oss-20b | 1197.6 ± 1.9 |
+| 97 | mistralai/mistral-small-3.1-24b-instruct-2503 | 1197.3 ± 1.1 |
+| 98 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 1197.3 ± 1.4 |
+| 99 | mistralai/Pixtral-Large-Instruct-2411 | 1196.8 ± 1.0 |
+| 100 | anthropic/claude-3.5-haiku-20241022 | 1196.6 ± 1.1 |
+| 101 | gpt-5.3-chat | 1194.9 ± 1.3 |
+
 </details>
-
-
 
 ---
 
