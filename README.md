@@ -56,44 +56,22 @@ This metric measures the global consistency and reproducibility of the leaderboa
 
 The following table compares candidate judge models across their separability scores, stability ratings, and bias baselines.
 
-| Candidate Judge Model | Prompt-Isolated Elo Separability (Score / $\omega^2$ / $d_{	ext{cliff}}$) | Bootstrapped Tournament Stability (Score / $\omega^2$ / $d_{	ext{cliff}}$) | Positional Bias (Pos 1 % / Pos 2 %) | Length Bias (Win Rate % / EV Margin) |
-| :--- | :---: | :---: | :---: | :---: |
-| **unsloth/Qwen3.6-27B-NVFP4** | **78.66%** / 0.8094 / 0.7637 | **91.15%** / 0.9469 / 0.8761 | 58.4% / 41.6% (Opt A)<br>61.3% / 38.7% (Opt B) | 55.7% / +8.0% (Opt A)<br>52.6% / +4.3% (Opt B) |
-| **Qwen/Qwen3.6-27B-FP8** | **77.09%** / 0.7950 / 0.7468 | **90.22%** / 0.9447 / 0.8598 | 60.0% / 40.0% (Opt A)<br>62.5% / 37.5% (Opt B) | 54.6% / +6.9% (Opt A)<br>51.9% / +2.6% (Opt B) |
-| **Qwen/Qwen3.6-27B** | **75.27%** / 0.7844 / 0.7209 | **90.18%** / 0.9421 / 0.8614 | 59.8% / 40.2% (Opt A)<br>61.3% / 38.7% (Opt B) | 54.4% / +6.8% (Opt A)<br>53.4% / +4.2% (Opt B) |
-| **Qwen/Qwen3.5-27B** | **75.14%** / 0.7861 / 0.7166 | **90.59%** / 0.9473 / 0.8645 | 70.2% / 29.8% (Opt A)<br>61.2% / 38.8% (Opt B) | 53.9% / +5.1% (Opt A)<br>52.2% / +2.9% (Opt B) |
-| **RedHatAI/Qwen3.5-9B-FP8-dynamic** | **73.38%** / 0.7541 / 0.7135 | **88.49%** / 0.9285 / 0.8412 | 72.2% / 27.8% (Opt A)<br>74.0% / 26.0% (Opt B) | 57.0% / +4.0% (Opt A)<br>53.1% / +1.6% (Opt B) |
-| **nvidia/diffusiongemma-26B-A4B-it-NVFP4** | **71.36%** / 0.7411 / 0.6861 | **88.17%** / 0.9184 / 0.8451 | 57.2% / 42.8% (Opt A)<br>57.9% / 42.1% (Opt B) | 55.6% / +9.0% (Opt A)<br>53.9% / +7.0% (Opt B) |
-| **google/gemma-4-12B-it-qat-w4a16-ct** | **71.21%** / 0.7411 / 0.6831 | **90.09%** / 0.9405 / 0.8612 | 24.0% / 76.0% (Opt A)<br>20.6% / 79.4% (Opt B) | 56.7% / +8.6% (Opt A)<br>54.7% / +5.5% (Opt B) |
-| **google/gemma-4-12B-it** | **69.99%** / 0.7198 / 0.6799 | **89.39%** / 0.9303 / 0.8575 | 31.0% / 69.0% (Opt A)<br>28.1% / 71.9% (Opt B) | 55.3% / +9.1% (Opt A)<br>54.6% / +7.1% (Opt B) |
-| **Qwen/Qwen3.5-9B** | **69.68%** / 0.7299 / 0.6637 | **87.72%** / 0.9308 / 0.8235 | 68.4% / 31.6% (Opt A)<br>69.3% / 30.7% (Opt B) | 54.5% / +3.3% (Opt A)<br>53.1% / +2.3% (Opt B) |
-| **google/gemma-4-E4B-it-qat-w4a16-ct** | **66.73%** / 0.6920 / 0.6426 | **87.31%** / 0.9056 / 0.8405 | 55.1% / 44.9% (Opt A)<br>52.7% / 47.3% (Opt B) | 55.9% / +9.6% (Opt A)<br>53.2% / +5.1% (Opt B) |
-| **Qwen/Qwen3.5-4B** | **66.35%** / 0.6827 / 0.6443 | **87.46%** / 0.9201 / 0.8290 | 67.6% / 32.4% (Opt A)<br>68.3% / 31.7% (Opt B) | 54.7% / +2.7% (Opt A)<br>52.8% / +1.9% (Opt B) |
-| **RedHatAI/Qwen3.5-4B-FP8-dynamic** | **65.76%** / 0.6668 / 0.6485 | **88.04%** / 0.9140 / 0.8469 | 77.6% / 22.4% (Opt A)<br>75.6% / 24.4% (Opt B) | 55.7% / +2.5% (Opt A)<br>54.1% / +2.1% (Opt B) |
-| **Qwen/Qwen3.6-35B-A3B** | **63.78%** / 0.6164 / 0.6592 | **86.61%** / 0.9008 / 0.8314 | 9.9% / 90.1% (Opt A)<br>9.5% / 90.5% (Opt B) | 55.4% / +1.8% (Opt A)<br>54.2% / +0.9% (Opt B) |
-| **AxionML/Qwen3.5-9B-NVFP4** | **60.56%** / 0.6151 / 0.5961 | **80.90%** / 0.8438 / 0.7743 | 62.7% / 37.3% (Opt A)<br>65.0% / 35.0% (Opt B) | 52.7% / +2.4% (Opt A)<br>53.6% / +2.0% (Opt B) |
-| **Qwen/Qwen3.5-2B** | **49.12%** / 0.4747 / 0.5077 | **81.70%** / 0.8466 / 0.7874 | 75.1% / 24.9% (Opt A)<br>72.5% / 27.5% (Opt B) | 54.7% / +1.8% (Opt A)<br>52.7% / +1.2% (Opt B) |
-| **AxionML/Qwen3.5-4B-NVFP4** | **37.97%** / 0.3287 / 0.4307 | *Omitted* | 52.6% / 47.4% (Opt A)<br>— | 50.8% / +1.4% (Opt A)<br>— |
-| **Qwen/Qwen3.5-0.8B** | **17.61%** / 0.1048 / 0.2474 | **51.36%** / 0.4959 / 0.5313 | 6.4% / 93.6% (Opt A)<br>5.7% / 94.3% (Opt B) | 50.1% / +0.0% (Opt A)<br>50.8% / +0.1% (Opt B) |
-
----
-
-## Detailed Model Results & Leaderboards
-
-- [nvidia/diffusiongemma-26B-A4B-it-NVFP4](detailed_results/nvidia_diffusiongemma-26B-A4B-it-NVFP4.md)
-- [unsloth/Qwen3.6-27B-NVFP4](detailed_results/unsloth_Qwen3.6-27B-NVFP4.md)
-- [Qwen/Qwen3.6-27B-FP8](detailed_results/Qwen_Qwen3.6-27B-FP8.md)
-- [Qwen/Qwen3.6-27B](detailed_results/Qwen_Qwen3.6-27B.md)
-- [Qwen/Qwen3.5-27B](detailed_results/Qwen_Qwen3.5-27B.md)
-- [RedHatAI/Qwen3.5-9B-FP8-dynamic](detailed_results/RedHatAI_Qwen3.5-9B-FP8-dynamic.md)
-- [google/gemma-4-12B-it-qat-w4a16-ct](detailed_results/google_gemma-4-12B-it-qat-w4a16-ct.md)
-- [google/gemma-4-12B-it](detailed_results/google_gemma-4-12B-it.md)
-- [Qwen/Qwen3.5-9B](detailed_results/Qwen_Qwen3.5-9B.md)
-- [google/gemma-4-E4B-it-qat-w4a16-ct](detailed_results/google_gemma-4-E4B-it-qat-w4a16-ct.md)
-- [Qwen/Qwen3.5-4B](detailed_results/Qwen_Qwen3.5-4B.md)
-- [RedHatAI/Qwen3.5-4B-FP8-dynamic](detailed_results/RedHatAI_Qwen3.5-4B-FP8-dynamic.md)
-- [Qwen/Qwen3.6-35B-A3B](detailed_results/Qwen_Qwen3.6-35B-A3B.md)
-- [AxionML/Qwen3.5-9B-NVFP4](detailed_results/AxionML_Qwen3.5-9B-NVFP4.md)
-- [Qwen/Qwen3.5-2B](detailed_results/Qwen_Qwen3.5-2B.md)
-- [AxionML/Qwen3.5-4B-NVFP4](detailed_results/AxionML_Qwen3.5-4B-NVFP4.md)
-- [Qwen/Qwen3.5-0.8B](detailed_results/Qwen_Qwen3.5-0.8B.md)
+| Rank | Judge Model | Separability (Prompt-Isolated) | Stability (Bootstrapped) | Positional Bias (1/2) | Length Bias (Win/EV) |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| 1 | [**unsloth/Qwen3.6-27B-NVFP4**](detailed_results/unsloth_Qwen3.6-27B-NVFP4.md) | **78.66%**<br><sub>$\omega^2$: 0.809 \| $\delta$: 0.764</sub> | **91.15%**<br><sub>$\omega^2$: 0.947 \| $\delta$: 0.876</sub> | 58.4% / 41.6% *(A)*<br>61.3% / 38.7% *(B)* | 55.7% / +8.0% *(A)*<br>52.6% / +4.3% *(B)* |
+| 2 | [**Qwen/Qwen3.6-27B-FP8**](detailed_results/Qwen_Qwen3.6-27B-FP8.md) | **77.09%**<br><sub>$\omega^2$: 0.795 \| $\delta$: 0.747</sub> | **90.22%**<br><sub>$\omega^2$: 0.945 \| $\delta$: 0.860</sub> | 60.0% / 40.0% *(A)*<br>62.5% / 37.5% *(B)* | 54.6% / +6.9% *(A)*<br>51.9% / +2.6% *(B)* |
+| 3 | [**Qwen/Qwen3.6-27B**](detailed_results/Qwen_Qwen3.6-27B.md) | **75.27%**<br><sub>$\omega^2$: 0.784 \| $\delta$: 0.721</sub> | **90.18%**<br><sub>$\omega^2$: 0.942 \| $\delta$: 0.861</sub> | 59.8% / 40.2% *(A)*<br>61.3% / 38.7% *(B)* | 54.4% / +6.8% *(A)*<br>53.4% / +4.2% *(B)* |
+| 4 | [**Qwen/Qwen3.5-27B**](detailed_results/Qwen_Qwen3.5-27B.md) | **75.14%**<br><sub>$\omega^2$: 0.786 \| $\delta$: 0.717</sub> | **90.59%**<br><sub>$\omega^2$: 0.947 \| $\delta$: 0.865</sub> | 70.2% / 29.8% *(A)*<br>61.2% / 38.8% *(B)* | 53.9% / +5.1% *(A)*<br>52.2% / +2.9% *(B)* |
+| 5 | [**RedHatAI/Qwen3.5-9B-FP8-dynamic**](detailed_results/RedHatAI_Qwen3.5-9B-FP8-dynamic.md) | **73.38%**<br><sub>$\omega^2$: 0.754 \| $\delta$: 0.714</sub> | **88.49%**<br><sub>$\omega^2$: 0.928 \| $\delta$: 0.841</sub> | 72.2% / 27.8% *(A)*<br>74.0% / 26.0% *(B)* | 57.0% / +4.0% *(A)*<br>53.1% / +1.6% *(B)* |
+| 6 | [**nvidia/diffusiongemma-26B-A4B-it-NVFP4**](detailed_results/nvidia_diffusiongemma-26B-A4B-it-NVFP4.md) | **71.36%**<br><sub>$\omega^2$: 0.741 \| $\delta$: 0.686</sub> | **88.17%**<br><sub>$\omega^2$: 0.918 \| $\delta$: 0.845</sub> | 57.2% / 42.8% *(A)*<br>57.9% / 42.1% *(B)* | 55.6% / +9.0% *(A)*<br>53.9% / +7.0% *(B)* |
+| 7 | [**google/gemma-4-12B-it-qat-w4a16-ct**](detailed_results/google_gemma-4-12B-it-qat-w4a16-ct.md) | **71.21%**<br><sub>$\omega^2$: 0.741 \| $\delta$: 0.683</sub> | **90.09%**<br><sub>$\omega^2$: 0.941 \| $\delta$: 0.861</sub> | 24.0% / 76.0% *(A)*<br>20.6% / 79.4% *(B)* | 56.7% / +8.6% *(A)*<br>54.7% / +5.5% *(B)* |
+| 8 | [**google/gemma-4-12B-it**](detailed_results/google_gemma-4-12B-it.md) | **69.99%**<br><sub>$\omega^2$: 0.720 \| $\delta$: 0.680</sub> | **89.39%**<br><sub>$\omega^2$: 0.930 \| $\delta$: 0.858</sub> | 31.0% / 69.0% *(A)*<br>28.1% / 71.9% *(B)* | 55.3% / +9.1% *(A)*<br>54.6% / +7.1% *(B)* |
+| 9 | [**Qwen/Qwen3.5-9B**](detailed_results/Qwen_Qwen3.5-9B.md) | **69.68%**<br><sub>$\omega^2$: 0.730 \| $\delta$: 0.664</sub> | **87.72%**<br><sub>$\omega^2$: 0.931 \| $\delta$: 0.824</sub> | 68.4% / 31.6% *(A)*<br>69.3% / 30.7% *(B)* | 54.5% / +3.3% *(A)*<br>53.1% / +2.3% *(B)* |
+| 10 | [**google/gemma-4-E4B-it-qat-w4a16-ct**](detailed_results/google_gemma-4-E4B-it-qat-w4a16-ct.md) | **66.73%**<br><sub>$\omega^2$: 0.692 \| $\delta$: 0.643</sub> | **87.31%**<br><sub>$\omega^2$: 0.906 \| $\delta$: 0.841</sub> | 55.1% / 44.9% *(A)*<br>52.7% / 47.3% *(B)* | 55.9% / +9.6% *(A)*<br>53.2% / +5.1% *(B)* |
+| 11 | [**Qwen/Qwen3.5-4B**](detailed_results/Qwen_Qwen3.5-4B.md) | **66.35%**<br><sub>$\omega^2$: 0.683 \| $\delta$: 0.644</sub> | **87.46%**<br><sub>$\omega^2$: 0.920 \| $\delta$: 0.829</sub> | 67.6% / 32.4% *(A)*<br>68.3% / 31.7% *(B)* | 54.7% / +2.7% *(A)*<br>52.8% / +1.9% *(B)* |
+| 12 | [**RedHatAI/Qwen3.5-4B-FP8-dynamic**](detailed_results/RedHatAI_Qwen3.5-4B-FP8-dynamic.md) | **65.76%**<br><sub>$\omega^2$: 0.667 \| $\delta$: 0.648</sub> | **88.04%**<br><sub>$\omega^2$: 0.914 \| $\delta$: 0.847</sub> | 77.6% / 22.4% *(A)*<br>75.6% / 24.4% *(B)* | 55.7% / +2.5% *(A)*<br>54.1% / +2.1% *(B)* |
+| 13 | [**Qwen/Qwen3.6-35B-A3B**](detailed_results/Qwen_Qwen3.6-35B-A3B.md) | **63.78%**<br><sub>$\omega^2$: 0.616 \| $\delta$: 0.659</sub> | **86.61%**<br><sub>$\omega^2$: 0.901 \| $\delta$: 0.831</sub> | 9.9% / 90.1% *(A)*<br>9.5% / 90.5% *(B)* | 55.4% / +1.8% *(A)*<br>54.2% / +0.9% *(B)* |
+| 14 | [**AxionML/Qwen3.5-9B-NVFP4**](detailed_results/AxionML_Qwen3.5-9B-NVFP4.md) | **60.56%**<br><sub>$\omega^2$: 0.615 \| $\delta$: 0.596</sub> | **80.90%**<br><sub>$\omega^2$: 0.844 \| $\delta$: 0.774</sub> | 62.7% / 37.3% *(A)*<br>65.0% / 35.0% *(B)* | 52.7% / +2.4% *(A)*<br>53.6% / +2.0% *(B)* |
+| 15 | [**Qwen/Qwen3.5-2B**](detailed_results/Qwen_Qwen3.5-2B.md) | **49.12%**<br><sub>$\omega^2$: 0.475 \| $\delta$: 0.508</sub> | **81.70%**<br><sub>$\omega^2$: 0.847 \| $\delta$: 0.787</sub> | 75.1% / 24.9% *(A)*<br>72.5% / 27.5% *(B)* | 54.7% / +1.8% *(A)*<br>52.7% / +1.2% *(B)* |
+| 16 | [**AxionML/Qwen3.5-4B-NVFP4**](detailed_results/AxionML_Qwen3.5-4B-NVFP4.md) | **37.97%**<br><sub>$\omega^2$: 0.329 \| $\delta$: 0.431</sub> | *- Omitted -* | 52.6% / 47.4% *(A)*<br>— | 50.8% / +1.4% *(A)*<br>— |
+| 17 | [**Qwen/Qwen3.5-0.8B**](detailed_results/Qwen_Qwen3.5-0.8B.md) | **17.61%**<br><sub>$\omega^2$: 0.105 \| $\delta$: 0.247</sub> | **51.36%**<br><sub>$\omega^2$: 0.496 \| $\delta$: 0.531</sub> | 6.4% / 93.6% *(A)*<br>5.7% / 94.3% *(B)* | 50.1% / +0.0% *(A)*<br>50.8% / +0.1% *(B)* |
